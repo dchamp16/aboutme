@@ -1,0 +1,222 @@
+#icon {
+  text-decoration: none;
+  color: black;
+  font-size: 6em;
+  transition: all 0.5s;
+}
+
+#icon:hover {
+  font-size: 7em;
+}
+
+.skill a {
+  font-size: 1.5em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+.skill a:hover,
+.favbooks li a:hover {
+  font-size: 2em;
+}
+
+.favbooks li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+/* header */
+.myname {
+  float: right;
+  font-size: 2.5em;
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+
+.myname:hover {
+  background-color: black;
+  color: white;
+}
+
+.h1aboutme::first-letter,
+.h1skill::first-letter,
+.h1personal::first-letter,
+.h1book::first-letter,
+.h1interest::first-letter {
+  font-size: 2.5em;
+}
+
+/* body */
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+  /* end of background */
+  margin: auto;
+  /* padding: 5%; */
+  font-family: 'comfortalight';
+  color: black;
+  user-select: none;
+  /*remove ability to select anything from the page*/
+}
+
+.res-section {
+  color: black;
+  font-family: 'comfortalight';
+}
+
+.aboutmebody,
+.haiku,
+.interest {
+  font-size: 1.2em;
+  text-align: left;
+  margin: 1.5em;
+  padding: 0.5em;
+  line-height: 2.2em;
+}
+
+.aboutmebody::first-letter,
+p.interest::first-letter,
+p.haiku::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#mypicture {
+  transition: all 1s;
+   shape-margin: 2rem; 
+  width: 50%;
+  float: right;
+   shape-outside: url('../img/me.JPG'); 
+  margin: 0.2em;
+  opacity: 0.8;
+}
+#mypicture:hover {
+  background: url('../img/meandwife.jpeg');
+  width: 50%;
+  transition: 0.3s;
+   shape-margin: 2rem; 
+  float: right;
+  margin: 0.2em;
+  opacity: 0.8;
+}
+
+/* table */
+
+.schedule th {
+  text-align: center;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.6em;
+}
+
+.schedule td {
+  text-align: center;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 1.3em;
+}
+td.worksched {
+  font-size: 1.5em;
+}
+/* table.schedule {
+  float: table-column;
+} */
+
+table.schedule {
+  /* float: table-column; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table .cs2300,
+table .cs2550,
+table .cs2370 {
+  transition: all 1s;
+}
+
+table .cs2300:hover,
+table .cs2550:hover,
+table .cs2370:hover {
+  color: white;
+  background-color: black;
+}
+
+.res-section {
+  margin-bottom: 3em;
+  font-family: 'comfortalight';
+}
+
+ol.skill,
+.personal,
+ol.favbooks {
+  font-family: 'comfortalight';
+  line-height: 2.5em;
+  list-style-type: none;
+}
+
+.myname {
+  transition: all 0.5s;
+}
+
+footer {
+  text-align: center;
+}
+
+table.schedule {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* for MOBILE responsive purposes */
+
+@media (max-width: 500px) {
+  .mypicture {
+    width: 90%;
+    margin: auto;
+    display: block;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .aboutmebody,
+  .haiku,
+  .interest {
+    text-align: center;
+    margin: 1.5em;
+    padding: 0.5em;
+    font-size: 0.5em;
+  }
+  .res-section {
+    font-size: 0.5em;
+    font-family: 'comfortalight';
+  }
+  .experience li,
+  .skill li {
+    list-style-type: none;
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+  }
+  ol.skill,
+  ol.experience {
+    text-align: center;
+    margin-right: 2em;
+    font-family: 'comfortalight';
+  }
+  footer {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.5em;
+  }
+  table.schedule {
+    width: 30%;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 0.3em;
+  }
+}

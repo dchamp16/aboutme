@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'robotolight';
+  src: url('../Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'comfortalight';
+  src: url('../Comfortaa-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'comfortamedium';
+  src: url('../Comfortaa-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'comfortaregular';
+  src: url('../Comfortaa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
