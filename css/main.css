@@ -51,7 +51,7 @@
 
 /* body */
 body {
-  background-image: url('../img/background.jpg');
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -60,7 +60,7 @@ body {
   /* end of background */
   margin: auto;
   /* padding: 5%; */
-  font-family: 'comfortalight';
+  font-family: "comfortalight";
   color: black;
   user-select: none;
   /*remove ability to select anything from the page*/
@@ -68,7 +68,7 @@ body {
 
 .res-section {
   color: black;
-  font-family: 'comfortalight';
+  font-family: "comfortalight";
 }
 
 .aboutmebody,
@@ -90,18 +90,18 @@ p.haiku::first-letter {
 
 #mypicture {
   transition: all 1s;
-   shape-margin: 2rem; 
+  shape-margin: 2rem;
   width: 50%;
   float: right;
-   shape-outside: url('../img/me.JPG'); 
+  shape-outside: url("../img/me.JPG");
   margin: 0.2em;
   opacity: 0.8;
 }
 #mypicture:hover {
-  background: url('../img/meandwife.jpeg');
+  background: url("../img/meandwife.jpeg");
   width: 50%;
   transition: 0.3s;
-   shape-margin: 2rem; 
+  shape-margin: 2rem;
   float: right;
   margin: 0.2em;
   opacity: 0.8;
@@ -150,13 +150,13 @@ table .cs2370:hover {
 
 .res-section {
   margin-bottom: 3em;
-  font-family: 'comfortalight';
+  font-family: "comfortalight";
 }
 
 ol.skill,
 .personal,
 ol.favbooks {
-  font-family: 'comfortalight';
+  font-family: "comfortalight";
   line-height: 2.5em;
   list-style-type: none;
 }
@@ -194,7 +194,7 @@ table.schedule {
   }
   .res-section {
     font-size: 0.5em;
-    font-family: 'comfortalight';
+    font-family: "comfortalight";
   }
   .experience li,
   .skill li {
@@ -206,7 +206,7 @@ table.schedule {
   ol.experience {
     text-align: center;
     margin-right: 2em;
-    font-family: 'comfortalight';
+    font-family: "comfortalight";
   }
   footer {
     text-align: center;
@@ -214,7 +214,7 @@ table.schedule {
     font-size: 0.5em;
   }
   table.schedule {
-    width: 30%;
+    width: 1px;
     text-align: center;
     border: 1px solid black;
     font-size: 0.3em;
