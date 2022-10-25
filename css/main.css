@@ -125,12 +125,8 @@ p.haiku::first-letter {
 td.worksched {
   font-size: 1.5em;
 }
-/* table.schedule {
-  float: table-column;
-} */
 
 table.schedule {
-  /* float: table-column; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -177,6 +173,17 @@ table.schedule {
 /* for MOBILE responsive purposes */
 
 @media (max-width: 500px) {
+  .head {
+    display: flex;
+    align-items: center;
+  }
+  #icon {
+    font-size: 3em;
+    padding-right: 50%;
+  }
+  .myname {
+    font-size: 1.5em;
+  }
   .mypicture {
     width: 90%;
     margin: auto;
@@ -214,9 +221,14 @@ table.schedule {
     font-size: 0.5em;
   }
   table.schedule {
+    display: flex;
+    right: 30px;
     width: 1px;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 0.3em;
+  }
+  .schedhead {
+    display: flex;
   }
 }
