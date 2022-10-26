@@ -29,8 +29,13 @@
 }
 
 /* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .myname {
-  float: right;
+  /* float: right; */
   font-size: 2.5em;
   text-decoration: underline;
   transition: all 0.5s;
@@ -173,16 +178,20 @@ table.schedule {
 /* for MOBILE responsive purposes */
 
 @media (max-width: 500px) {
+  #clock {
+    font-size: 0.5em;
+  }
   .head {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   #icon {
-    font-size: 3em;
-    padding-right: 50%;
+    font-size: 2em;
+    /* padding-right: 50%; */
   }
   .myname {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .mypicture {
     width: 90%;

@@ -22,6 +22,7 @@
         <!-- header myname -->
         <a id="icon" class="fa-solid fa-square-parking" href="#"></a>
         <h1 class="myname">Peter Ramos</h1>
+        <div id="clock"></div>
       </header>
       <hr />
       <div class="container">
@@ -205,5 +206,24 @@
         </footer>
       </div>
     </main>
+
+    <!-- react -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- react components -->
+    <script type="text/babel" src="./components/Clock.js"></script>
+
+    <script type="text/babel">
+      const clockDiv = document.getElementById("clock");
+      ReactDOM.render(<Clock />, clockDiv);
+    </script>
   </body>
 </html>
