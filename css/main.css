@@ -16,6 +16,21 @@ html {
   justify-content: space-around;
   list-style: none;
 }
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+.nav-bar ul li a:hover {
+  color: #f5f5f5;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.nav-bar ul li a:active {
+  background-color: transparent;
+  color: black;
+}
 .skill a {
   font-size: 1.5em;
   padding-right: 1em;
@@ -71,7 +86,6 @@ body {
   height: 100%;
   /* end of background */
   margin: auto;
-  /* padding: 5%; */
   font-family: "comfortalight";
   color: black;
   user-select: none;
@@ -120,7 +134,9 @@ p.haiku::first-letter {
 }
 
 /* table */
-
+center {
+  padding: 1.5em;
+}
 .schedule th {
   text-align: center;
   padding-right: 1.5em;
@@ -182,6 +198,11 @@ table.schedule {
   font-size: 0.8em;
 }
 
+.contact {
+  text-decoration: none;
+  color: black;
+}
+
 /* for MOBILE responsive purposes */
 
 @media (max-width: 500px) {
@@ -230,7 +251,6 @@ table.schedule {
   }
   ol.skill,
   ol.experience {
-    text-align: center;
     margin-right: 2em;
     font-family: "comfortalight";
   }
@@ -249,5 +269,8 @@ table.schedule {
   }
   .schedhead {
     display: flex;
+  }
+  center {
+    display: none;
   }
 }
