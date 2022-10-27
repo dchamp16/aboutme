@@ -8,7 +8,11 @@
 #icon:hover {
   font-size: 7em;
 }
-
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
 .skill a {
   font-size: 1.5em;
   padding-right: 1em;
