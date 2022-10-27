@@ -205,7 +205,7 @@ table.schedule {
 
 /* for MOBILE responsive purposes */
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   #clock {
     font-size: 0.5em;
   }
@@ -270,6 +270,12 @@ table.schedule {
   .schedhead {
     display: flex;
   }
+  center {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   center {
     display: none;
   }
