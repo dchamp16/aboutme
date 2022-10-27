@@ -200,6 +200,9 @@ table.schedule {
   .myname {
     font-size: 1em;
   }
+  .nav-bar ul {
+    font-size: 0.5em;
+  }
   .mypicture {
     width: 90%;
     margin: auto;
