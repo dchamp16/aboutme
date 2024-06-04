@@ -1,4 +1,4 @@
 /* your javascript is all included here */
-function helloWorld(){
-    //window.alert("Hello World");
+function helloWorld() {
+  window.alert("Hello World");
 }
