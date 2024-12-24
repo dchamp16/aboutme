@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,12 +7,12 @@ import { SkillCategory } from "../types/resume";
 
 export default function Skills() {
   const skillCategories: SkillCategory[] = [
-    { title: 'Frontend', skills: resumeData.skills.frontend },
-    { title: 'Backend', skills: resumeData.skills.backend },
-    { title: 'Cloud & DevOps', skills: resumeData.skills.cloud },
-    { title: 'Tools', skills: resumeData.skills.tools },
-    { title: 'Soft Skills', skills: resumeData.skills.softSkills },
-    { title: 'Other', skills: resumeData.skills.other },
+    { title: "Frontend", skills: resumeData.skills.frontend },
+    { title: "Backend", skills: resumeData.skills.backend },
+    { title: "Cloud & DevOps", skills: resumeData.skills.cloud },
+    { title: "Tools", skills: resumeData.skills.tools },
+    { title: "Soft Skills", skills: resumeData.skills.softSkills },
+    { title: "Others", skills: resumeData.skills.other },
   ];
 
   return (

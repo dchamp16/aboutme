@@ -144,13 +144,13 @@ export const resumeData = {
       description: 'Real-time environmental monitoring system for UVU campus using Arduino and MongoDB. The system collected environmental data through Arduino sensors and exposed it via a REST API deployed on Render (Note: Arduino data collection ended with course completion).',
       technologies: ['Arduino', 'MongoDB', 'Next.js', 'Tailwind CSS', 'Express.js'],
       highlights: [
-        'Built real-time monitoring for air quality, temperature, and humidity',
+        'Built real-time Arduino monitoring for air quality, temperature, and humidity',
         'Designed responsive UI for data visualization',
         'Deployed REST API on Render (https://arduino-environmental-monitoring-system.onrender.com/data)',
         'Configured Render services and Middleware pipelines',
         'Implemented Arduino sensors for data collection (active during course duration)'
       ],
-      repository: 'https://github.com/dchamp16/CS4690-web-iii.git'
+      repository: 'https://github.com/dchamp16/CS4900_Capstone'
     },
     {
       name: 'Multi-tenant School Management System',
@@ -163,7 +163,7 @@ export const resumeData = {
         'Created dashboard analytics for student performance tracking',
         'Integrated real-time notifications for course updates and announcements'
       ],
-      repository: 'https://github.com/dchamp16/group-a-cs2450.git'
+      repository: 'https://github.com/dchamp16/CS4690-web-iii/tree/main/megaPracticum'
     },
     {
       name: 'Directory Reader',
@@ -173,7 +173,7 @@ export const resumeData = {
         'Developed directory tree structure visualization',
         'Implemented file content extraction and compression'
       ],
-      repository: 'https://github.com/dchamp16/cs3320-numerical-software.git'
+      repository: 'https://github.com/dchamp16/directoryReader'
     },
     {
       name: 'Python Ordering System',
@@ -183,7 +183,20 @@ export const resumeData = {
         'Implemented CRUD operations for data management',
         'Built efficient data handling system'
       ],
-      repository: 'https://github.com/dchamp16/python-ordering-system.git'
+      repository: 'https://github.com/dchamp16/python-ordering-system'
+    },
+    {
+      name: 'UVSim Basic Machine Language Simulator',
+      description: 'A simulator designed to teach students machine language and computer architecture by executing programs written in Basic Machine Language (BasicML).',
+      technologies: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript'],
+      highlights: [
+        'Developed a web-based simulator for executing BasicML programs.',
+        'Implemented features to edit, save, and handle memory overflow.',
+        'Integrated error handling for invalid instructions, file not found, and division by zero.',
+        'Supported dynamic memory size configuration and interactive editing of loaded programs.',
+        'Enabled step-by-step execution with real-time updates on memory and registers.'
+      ],
+      repository: 'https://github.com/dchamp16/group-a-cs2450'
     }
   ]
 };
