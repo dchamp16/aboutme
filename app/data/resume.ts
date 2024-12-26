@@ -197,6 +197,21 @@ export const resumeData = {
         'Enabled step-by-step execution with real-time updates on memory and registers.'
       ],
       repository: 'https://github.com/dchamp16/group-a-cs2450'
+    },
+    {
+      name: 'Real-time Translation Application',
+      description: 'A real-time translation application enabling multilingual communication using WebSockets and Google Translation API.',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'WebSockets', 'Google Translation API', 'Tailwind CSS', 'Vite', 'Docker'],
+      highlights: [
+        'Designed and implemented a WebSocket server for real-time text translation and multilingual chat functionality.',
+        'Integrated Google Translation API for dynamic language translation with robust error-handling mechanisms.',
+        'Built a responsive and dynamic front-end using React.js, Tailwind CSS, and Vite.',
+        'Deployed the full-stack application on Render, ensuring production scalability and reliability.',
+        'Supported English, Japanese, and Spanish translations with real-time feedback for users.',
+        'Optimized WebSocket client and server communication for low-latency interaction.'
+      ],
+      repository: 'https://github.com/dchamp16/translator',
+      website: 'https://translator-cn4w.onrender.com'
     }
   ]
 };

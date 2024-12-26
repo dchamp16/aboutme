@@ -32,6 +32,7 @@ export interface Project {
   technologies: string[];
   highlights: string[];
   repository: string;
+  website?: string;
 }
 
 export interface Contact {
