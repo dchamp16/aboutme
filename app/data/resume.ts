@@ -208,7 +208,8 @@ export const resumeData = {
         'Built a responsive and dynamic front-end using React.js, Tailwind CSS, and Vite.',
         'Deployed the full-stack application on Render, ensuring production scalability and reliability.',
         'Supported English, Japanese, and Spanish translations with real-time feedback for users.',
-        'Optimized WebSocket client and server communication for low-latency interaction.'
+        'Optimized WebSocket client and server communication for low-latency interaction.',
+        "Please be patient with this site. It is deployed on Render's free tier, which may result in slower loading times or occasional hiccups."
       ],
       repository: 'https://github.com/dchamp16/translator',
       website: 'https://translator-cn4w.onrender.com'
