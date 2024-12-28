@@ -199,19 +199,30 @@ export const resumeData = {
       repository: 'https://github.com/dchamp16/group-a-cs2450'
     },
     {
-      name: 'Real-time Translation Application',
-      description: 'A real-time translation application enabling multilingual communication using WebSockets and Google Translation API.',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'WebSockets', 'Google Translation API', 'Tailwind CSS', 'Vite', 'Docker'],
-      highlights: [
-        'Designed and implemented a WebSocket server for real-time text translation and multilingual chat functionality.',
-        'Integrated Google Translation API for dynamic language translation with robust error-handling mechanisms.',
-        'Built a responsive and dynamic front-end using React.js, Tailwind CSS, and Vite.',
-        'Deployed the full-stack application on Render, ensuring production scalability and reliability.',
-        'Supported English, Japanese, and Spanish translations with real-time feedback for users.',
-        'Optimized WebSocket client and server communication for low-latency interaction.',
+      "name": "BabelFish Translator",
+      "description": "A multilingual communication app using HTTP APIs and Google Translation API for real-time text and speech translation.",
+      "technologies": [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "Google Translation API",
+        "Tailwind CSS",
+        "Vite",
+        "Docker",
+        "Vercel"
       ],
-      repository: 'https://github.com/dchamp16/translator',
-      website: 'https://translator-phi-black.vercel.app/'
+      "highlights": [
+        "Built a RESTful API for real-time translation and multilingual chat.",
+        "Integrated Google Translation API with robust error handling.",
+        "Developed a responsive UI with React, TypeScript, and Tailwind CSS.",
+        "Added speech recognition and synthesis for hands-free interaction.",
+        "Deployed on Vercel with optimized builds via Docker.",
+        "Messages are stored in memory during runtime, resetting on restart."
+      ],
+      "repository": "https://github.com/dchamp16/translator",
+      "website": "https://translator-phi-black.vercel.app/"
     }
+
   ]
 };
