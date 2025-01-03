@@ -248,7 +248,6 @@ export const resumeData = {
       ],
 
       "repository": "https://github.com/dchamp16/ordering-system",
-      "website": null
     }
   ]
 };
