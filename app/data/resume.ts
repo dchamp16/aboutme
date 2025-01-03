@@ -243,9 +243,10 @@ export const resumeData = {
         "Built RESTful APIs for orders and user management with robust error handling and validation.",
         "Designed session-based authentication and middleware for secure access control.",
         "Created an intuitive workflow for adding, updating, and deleting orders and users.",
-        "Integrated MongoDB for data persistence, with Mongoose for schema modeling."
+        "Integrated MongoDB for data persistence, with Mongoose for schema modeling.",
+        "current_status: Work in progress; core functionalities for order and user management are operational.",
       ],
-      "current_status": "Work in progress; core functionalities for order and user management are operational.",
+
       "repository": "https://github.com/dchamp16/ordering-system",
       "website": null
     }
