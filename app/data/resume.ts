@@ -222,7 +222,32 @@ export const resumeData = {
       ],
       "repository": "https://github.com/dchamp16/translator",
       "website": "https://translator-phi-black.vercel.app/"
+    },
+    {
+      "name": "Ordering System",
+      "description": "A comprehensive ordering and user management system designed to streamline employee order tracking and admin user management, featuring role-based access control and RESTful APIs.",
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "JavaScript",
+        "bcrypt.js",
+        "Express-Session",
+        "dotenv",
+        "Postman"
+      ],
+      "highlights": [
+        "Implemented order management for employees, allowing them to track orders via empId without requiring login.",
+        "Developed admin user management system with Super Admin and Admin roles, including role-based permissions.",
+        "Built RESTful APIs for orders and user management with robust error handling and validation.",
+        "Designed session-based authentication and middleware for secure access control.",
+        "Created an intuitive workflow for adding, updating, and deleting orders and users.",
+        "Integrated MongoDB for data persistence, with Mongoose for schema modeling."
+      ],
+      "current_status": "Work in progress; core functionalities for order and user management are operational.",
+      "repository": "https://github.com/dchamp16/ordering-system",
+      "website": null
     }
-
   ]
 };
