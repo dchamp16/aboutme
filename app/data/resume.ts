@@ -244,7 +244,8 @@ export const resumeData = {
         "Designed session-based authentication and middleware for secure access control.",
         "Created an intuitive workflow for adding, updating, and deleting orders and users.",
         "Integrated MongoDB for data persistence, with Mongoose for schema modeling.",
-        "current_status: Work in progress; core functionalities for order and user management are operational.",
+          "Implemented top-tier admin and lower-tier admin that have 2 different permissions.",
+        "current_status: Work in progress; when ordered deducted - current stock, then return deducted + current stock but when initially 0 or NULL no deduction or addition.",
       ],
 
       "repository": "https://github.com/dchamp16/ordering-system",
