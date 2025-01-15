@@ -1,7 +1,7 @@
 export const resumeData = {
   contact: {
     phone: '(801) 906-1326',
-    email: ['dchamp16@gmail.com'],
+    email: [' peterjustineramos@gmail.com '],
     github: 'https://github.com/dchamp16',
     linkedin: 'https://www.linkedin.com/in/peter-justine-ramos-2a40a4284',
   },
