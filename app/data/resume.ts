@@ -1,7 +1,7 @@
 export const resumeData = {
   contact: {
     phone: '(801) 906-1326',
-    email: [' peterjustineramos@gmail.com '],
+    email: ['peterjustineramos@gmail.com'],
     github: 'https://github.com/dchamp16',
     linkedin: 'https://www.linkedin.com/in/peter-justine-ramos-2a40a4284',
   },
@@ -199,56 +199,55 @@ export const resumeData = {
       repository: 'https://github.com/dchamp16/group-a-cs2450'
     },
     {
-      "name": "BabelFish Translator",
-      "description": "A multilingual communication app using HTTP APIs and Google Translation API for real-time text and speech translation.",
-      "technologies": [
-        "React.js",
-        "TypeScript",
-        "Node.js",
-        "Express.js",
-        "Google Translation API",
-        "Tailwind CSS",
-        "Vite",
-        "Docker",
-        "Vercel"
+      name: 'BabelFish Translator',
+      description: 'A multilingual communication app using HTTP APIs and Google Translation API for real-time text and speech translation.',
+      technologies: [
+        'React.js',
+        'TypeScript',
+        'Node.js',
+        'Express.js',
+        'Google Translation API',
+        'Tailwind CSS',
+        'Vite',
+        'Docker',
+        'Vercel'
       ],
-      "highlights": [
-        "Built a RESTful API for real-time translation and multilingual chat.",
-        "Integrated Google Translation API with robust error handling.",
-        "Developed a responsive UI with React, TypeScript, and Tailwind CSS.",
-        "Added speech recognition and synthesis for hands-free interaction.",
-        "Deployed on Vercel with optimized builds via Docker.",
-        "Messages are stored in memory during runtime, resetting on restart."
+      highlights: [
+        'Built a RESTful API for real-time translation and multilingual chat.',
+        'Integrated Google Translation API with robust error handling.',
+        'Developed a responsive UI with React, TypeScript, and Tailwind CSS.',
+        'Added speech recognition and synthesis for hands-free interaction.',
+        'Deployed on Vercel with optimized builds via Docker.',
+        'Messages are stored in memory during runtime, resetting on restart.'
       ],
-      "repository": "https://github.com/dchamp16/translator",
-      "website": "https://translator-phi-black.vercel.app/"
+      repository: 'https://github.com/dchamp16/translator',
+      website: 'https://translator-phi-black.vercel.app/'
     },
     {
-      "name": "Ordering System",
-      "description": "A comprehensive ordering and user management system designed to streamline employee order tracking and admin user management, featuring role-based access control and RESTful APIs.",
-      "technologies": [
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Mongoose",
-        "JavaScript",
-        "bcrypt.js",
-        "Express-Session",
-        "dotenv",
-        "Postman"
+      name: 'Ordering System',
+      description: 'A comprehensive ordering and user management system designed to streamline employee order tracking and admin user management, featuring role-based access control and RESTful APIs.',
+      technologies: [
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'Mongoose',
+        'JavaScript',
+        'bcrypt.js',
+        'Express-Session',
+        'dotenv',
+        'Postman'
       ],
-      "highlights": [
-        "Implemented order management for employees, allowing them to track orders via empId without requiring login.",
-        "Developed admin user management system with Super Admin and Admin roles, including role-based permissions.",
-        "Built RESTful APIs for orders and user management with robust error handling and validation.",
-        "Designed session-based authentication and middleware for secure access control.",
-        "Created an intuitive workflow for adding, updating, and deleting orders and users.",
-        "Integrated MongoDB for data persistence, with Mongoose for schema modeling.",
-          "Implemented top-tier admin and lower-tier admin that have 2 different permissions.",
-        "current_status: Work in progress; when ordered deducted - current stock, then return deducted + current stock but when initially 0 or NULL no deduction or addition.",
+      highlights: [
+        'Implemented order management for employees, allowing them to track orders via empId without requiring login.',
+        'Developed admin user management system with Super Admin and Admin roles, including role-based permissions.',
+        'Built RESTful APIs for orders and user management with robust error handling and validation.',
+        'Designed session-based authentication and middleware for secure access control.',
+        'Created an intuitive workflow for adding, updating, and deleting orders and users.',
+        'Integrated MongoDB for data persistence, with Mongoose for schema modeling.',
+        'Implemented top-tier admin and lower-tier admin that have 2 different permissions.',
+        'Current status: Work in progress; when ordered deducted - current stock, then return deducted + current stock but when initially 0 or NULL no deduction or addition.'
       ],
-
-      "repository": "https://github.com/dchamp16/ordering-system",
+      repository: 'https://github.com/dchamp16/ordering-system'
     }
   ]
 };
