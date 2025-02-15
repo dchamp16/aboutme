@@ -6,14 +6,17 @@ import { resumeData } from "../data/resume";
 import { SkillCategory } from "../types/resume";
 
 export default function Skills() {
-  const skillCategories: SkillCategory[] = [
-    { title: "Frontend", skills: resumeData.skills.frontend },
-    { title: "Backend", skills: resumeData.skills.backend },
-    { title: "Cloud & DevOps", skills: resumeData.skills.cloud },
-    { title: "Tools", skills: resumeData.skills.tools },
-    { title: "Soft Skills", skills: resumeData.skills.softSkills },
-    { title: "Others", skills: resumeData.skills.other },
-  ];
+    const skillCategories: SkillCategory[] = [
+        { title: "Frontend", skills: resumeData.skills.frontend },
+        { title: "Backend", skills: resumeData.skills.backend },
+        { title: "Databases", skills: resumeData.skills.databases },
+        { title: "Cloud & DevOps", skills: resumeData.skills.cloudDevOps },
+        { title: "Development Tools", skills: resumeData.skills.developmentTools },
+        { title: "Prototyping & Wireframing", skills: resumeData.skills.prototypingWireframing },
+        { title: "Soft Skills", skills: resumeData.skills.softSkills },
+        { title: "Other Programming Languages", skills: resumeData.skills.otherLanguages }
+    ];
+;
 
   return (
     <Card className="mb-8">

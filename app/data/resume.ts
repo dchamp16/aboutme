@@ -11,11 +11,11 @@ export const resumeData = {
     frontend: ['JavaScript', 'TypeScript', 'Vue.js', 'React.js', 'Next.js', 'Tailwind', 'CSS', 'Sass', 'Bootstrap', 'jQuery'],
     backend: ['Node.js', 'Express.js', 'REST APIs'],
     databases: ['SQL', 'MongoDB', 'PostgreSQL', 'Snowflake'],
-    cloudDevOps: ['AWS', 'Google Console', 'Docker'],
-    developmentTools: ['Git', 'Visual Studio Code', 'IntelliJ IDEA', 'Lucidchart'],
-    prototypingWireframing: ['Figma', 'Adobe XD', 'Sketch', 'Balsamiq'],
+    cloud: ['AWS', 'Google Console', 'Docker'],
+    tools: ['Git', 'Visual Studio Code', 'IntelliJ IDEA', 'Lucidchart'],
+    prototyping: ['Figma', 'Adobe XD', 'Sketch', 'Balsamiq'],
     softSkills: ['Agile methodologies', 'Team collaboration', 'Problem-solving'],
-    otherLanguages: ['C', 'C++', 'Python']
+    other: ['C', 'C++', 'Python']
   },
   education: [
     {
