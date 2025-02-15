@@ -19,6 +19,7 @@
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
       </map>
     </option>
