@@ -8,10 +8,12 @@ export const resumeData = {
   name: 'Peter Justine Ramos',
   summary: 'Full Stack Developer with hands-on experience in JavaScript, TypeScript, React, NodeJS, and modern web technologies. Skilled in creating user-friendly applications and implementing cloud using AWS and Google Console. Passionate about developing high-quality software through collaboration and building projects.',
   skills: {
-    frontend: ['JavaScript', 'TypeScript', 'ReactJS', 'Next.js', 'Tailwind', 'Sass', 'Bootstrap', 'jQuery'],
-    backend: ['NodeJS', 'ExpressJS', 'REST APIs', 'SQL', 'NoSQL'],
-    cloud: ['AWS', 'Docker', 'Google Console'],
-    tools: ['Git', 'MongoDB', 'MySQL'],
+    frontend: ['JavaScript', 'TypeScript', 'Vue.js', 'React.js', 'Next.js', 'Tailwind', 'CSS', 'Sass', 'Bootstrap', 'jQuery'],
+    backend: ['Node.js', 'Express.js', 'REST APIs'],
+    databases: ['SQL', 'MongoDB', 'PostgreSQL', 'Snowflake'],
+    cloud: ['AWS', 'Google Console', 'Docker'],
+    tools: ['Git', 'Visual Studio Code', 'IntelliJ IDEA', 'Lucidchart'],
+    prototyping: ['Figma', 'Adobe XD', 'Sketch', 'Balsamiq'],
     softSkills: ['Agile methodologies', 'Team collaboration', 'Problem-solving'],
     other: ['C', 'C++', 'Python']
   },
@@ -23,11 +25,11 @@ export const resumeData = {
       location: 'Provo, Utah',
       courses: [
         {
-          code: 'CS3410',
-          name: 'Human Factors in Software Development',
+          code: 'CS4900',
+          name: 'Capstone Project — Environmental Monitoring System',
           highlights: [
-            'Designed and evaluated user interfaces with tools like Balsamiq and Photoshop',
-            'Contextual inquiries and developed wireframes for user-centered design solutions'
+            'Deployed Arduino units across campus for real-time environmental data collection',
+            'Developed a responsive UI with Next.js and Tailwind CSS and implemented a CI/CD workflow'
           ]
         },
         {
@@ -45,6 +47,13 @@ export const resumeData = {
           ]
         },
         {
+          code: 'CS3530',
+          name: 'Advanced Databases and NoSQL',
+          highlights: [
+            'Designed databases with MySQL, PostgreSQL, and NoSQL solutions using MongoDB and Cassandra'
+          ]
+        },
+        {
           code: 'CS3520',
           name: 'Database Management Systems',
           highlights: [
@@ -52,18 +61,11 @@ export const resumeData = {
           ]
         },
         {
-          code: 'CS3530',
-          name: 'Advanced Databases and NoSQL',
+          code: 'CS3410',
+          name: 'Human Factors in Software Development',
           highlights: [
-            'Designed and implemented databases tailored to specific use cases, utilizing MySQL, Postgres, MongoDB, and Cassandra'
-          ]
-        },
-        {
-          code: 'CS4900',
-          name: 'Capstone Project — Environmental Monitoring System',
-          highlights: [
-            'Deployed Arduino units across campus for real-time environmental data collection',
-            'Developed a responsive UI with Next.js and Tailwind CSS and implemented a CI/CD workflow'
+            'Designed and evaluated user interfaces with tools like Figma, Balsamiq, and Photoshop',
+            'Conducted contextual inquiries and developed wireframes for user-centered design solutions'
           ]
         }
       ]
@@ -75,36 +77,48 @@ export const resumeData = {
       location: 'Salt Lake, Utah',
       courses: [
         {
-          code: 'CSIS 1400',
-          name: 'Fundamentals of Programming',
+          code: 'CSIS 2810',
+          name: 'Computer Architecture',
           highlights: [
-            'Learned foundational programming concepts with Java',
-            'Designed and implemented programs using IDEs and UML diagrams',
-            'Developed skills in problem-solving, debugging, and method creation'
+            'Examined the interaction between hardware and software, including logic gates, processors, and memory hierarchies',
+            'Built a deeper understanding of computer architecture and parallel processing',
+            'Collaborated on team projects analyzing processor performance and optimization techniques'
           ]
         },
         {
           code: 'CSIS 2420',
           name: 'Algorithms & Data Structures',
           highlights: [
-            'Focused on designing and analyzing efficient algorithms',
-            'Evaluated algorithm performance and data structures',
-            'Developed skills in Java generics, recursion, and Big-O analysis'
+            'Focused on designing and analyzing efficient algorithms and implementing data structures like stacks, queues, linked lists, trees, and graphs',
+            'Evaluated algorithm performance and selected appropriate data structures for problem-solving',
+            'Developed skills in Java generics, recursion, and Big-O complexity analysis'
           ]
         },
         {
-          code: 'CSIS 2810',
-          name: 'Computer Architecture',
+          code: 'CSIS 1400',
+          name: 'Fundamentals of Programming',
           highlights: [
-            'Examined hardware-software interaction and computer architecture',
-            'Built understanding of parallel processing',
-            'Collaborated on processor performance optimization projects'
+            'Learned foundational programming concepts, including primitive data types, control structures, and object-oriented programming with Java',
+            'Designed and implemented simple Java programs using IDEs and UML diagrams',
+            'Developed skills in problem-solving, debugging, and method creation for software design'
           ]
         }
       ]
     }
+
   ],
   experience: [
+    {
+      company: 'Arroyo Seco Baseball',
+      location: 'California',
+      position: 'Web Developer',
+      dates: 'December 2022 - May 2023',
+      responsibilities: [
+        'Improved website performance and reduced load times by 20% using WordPress',
+        'Developed interactive features to enhance user experience',
+        'Collaborated with cross-functional teams'
+      ]
+    },
     {
       company: 'Albany Composite',
       location: 'Salt Lake, Utah',
@@ -116,27 +130,6 @@ export const resumeData = {
         'Implemented quality control measures, reducing defects by 10%'
       ]
     },
-    {
-      company: 'Backcountry Corporation',
-      location: 'West Valley, Utah',
-      position: 'Merchant II',
-      dates: 'October 2018 - March 2024',
-      responsibilities: [
-        'Managed inventory and improved operational efficiency through team training',
-        'Operated forklifts and ensured safe handling of heavy materials'
-      ]
-    },
-    {
-      company: 'Arroyo Seco Baseball',
-      location: 'California',
-      position: 'Web Developer',
-      dates: 'December 2022 - May 2023',
-      responsibilities: [
-        'Improved website performance and reduced load times by 20% using WordPress',
-        'Developed interactive features to enhance user experience',
-        'Collaborated with cross-functional teams'
-      ]
-    }
   ],
   projects: [
     {
