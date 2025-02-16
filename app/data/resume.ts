@@ -158,16 +158,16 @@ export const resumeData = {
       ],
       repository: 'https://github.com/dchamp16/CS4690-web-iii/tree/main/megaPracticum'
     },
-    {
-      name: 'Directory Reader',
-      description: 'Node.js application for recursive directory content extraction',
-      technologies: ['Node.js', 'TypeScript'],
-      highlights: [
-        'Developed directory tree structure visualization',
-        'Implemented file content extraction and compression'
-      ],
-      repository: 'https://github.com/dchamp16/directoryReader'
-    },
+    // {
+    //   name: 'Directory Reader',
+    //   description: 'Node.js application for recursive directory content extraction',
+    //   technologies: ['Node.js', 'TypeScript'],
+    //   highlights: [
+    //     'Developed directory tree structure visualization',
+    //     'Implemented file content extraction and compression'
+    //   ],
+    //   repository: 'https://github.com/dchamp16/directoryReader'
+    // },
     {
       name: 'Python Ordering System',
       description: 'Terminal-based ordering system with NoSQL data manipulation',
