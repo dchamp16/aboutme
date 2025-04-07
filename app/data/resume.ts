@@ -158,16 +158,6 @@ export const resumeData = {
       ],
       repository: 'https://github.com/dchamp16/CS4690-web-iii/tree/main/megaPracticum'
     },
-    // {
-    //   name: 'Directory Reader',
-    //   description: 'Node.js application for recursive directory content extraction',
-    //   technologies: ['Node.js', 'TypeScript'],
-    //   highlights: [
-    //     'Developed directory tree structure visualization',
-    //     'Implemented file content extraction and compression'
-    //   ],
-    //   repository: 'https://github.com/dchamp16/directoryReader'
-    // },
     {
       name: 'Python Ordering System',
       description: 'Terminal-based ordering system with NoSQL data manipulation',
@@ -225,8 +215,11 @@ export const resumeData = {
         'MongoDB',
         'Mongoose',
         'JavaScript',
+        'Reactjs',
         'bcrypt.js',
         'Express-Session',
+        'Joi',
+        'JWT',
         'dotenv',
         'Postman'
       ],
@@ -240,7 +233,8 @@ export const resumeData = {
         'Implemented top-tier admin and lower-tier admin that have 2 different permissions.',
         'Current status: Work in progress; when ordered deducted - current stock, then return deducted + current stock but when initially 0 or NULL no deduction or addition.'
       ],
-      repository: 'https://github.com/dchamp16/ordering-system'
+      repository: 'https://github.com/dchamp16/ordering-system',
+      website: 'https://ordering-system-heto.vercel.app/'
     }
   ]
 };
