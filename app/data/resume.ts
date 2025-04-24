@@ -169,19 +169,6 @@ export const resumeData = {
       repository: 'https://github.com/dchamp16/python-ordering-system'
     },
     {
-      name: 'UVSim Basic Machine Language Simulator',
-      description: 'A simulator designed to teach students machine language and computer architecture by executing programs written in Basic Machine Language (BasicML).',
-      technologies: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript'],
-      highlights: [
-        'Developed a web-based simulator for executing BasicML programs.',
-        'Implemented features to edit, save, and handle memory overflow.',
-        'Integrated error handling for invalid instructions, file not found, and division by zero.',
-        'Supported dynamic memory size configuration and interactive editing of loaded programs.',
-        'Enabled step-by-step execution with real-time updates on memory and registers.'
-      ],
-      repository: 'https://github.com/dchamp16/group-a-cs2450'
-    },
-    {
       name: 'BabelFish Translator',
       description: 'A multilingual communication app using HTTP APIs and Google Translation API for real-time text and speech translation.',
       technologies: [
@@ -235,6 +222,20 @@ export const resumeData = {
       ],
       repository: 'https://github.com/dchamp16/ordering-system',
       website: 'https://ordering-system-heto.vercel.app/'
-    }
+    },
+    {
+      name: 'Expense Tracker',
+      description: 'A web-based expense tracker application that allows users to manage their expenses and income, providing a user-friendly interface for tracking financial transactions.',
+      technologies: ['TypeScript', 'React.js', 'Tailwind', 'C#', 'ASP.NET Core'],
+      highlights: [
+        '(✓)Implemented user authentication and authorization with ASP.NET Core.',
+        '(𐄂)Integrated RESTful APIs for data management and real-time updates.',
+        '(𐄂)Utilized C# for backend development, ensuring efficient data processing and storage.',
+        '(𐄂)Developed a responsive web application for tracking expenses and income using React.js and TypeScript.',
+        '(𐄂)Designed a user-friendly interface with Tailwind CSS for seamless navigation.',
+
+      ],
+      repository: 'https://github.com/dchamp16/expenseTracker'
+    },
   ]
 };
