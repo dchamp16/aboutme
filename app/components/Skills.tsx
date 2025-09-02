@@ -16,6 +16,10 @@ export default function Skills() {
       title: "System Administration & IT",
       skills: resumeData.skills.systemAdminAndIt,
     },
+    {
+      title: "Programming Languages",
+      skills: resumeData.skills.programmingLanguages,
+    },
     { title: "Development Tools", skills: resumeData.skills.developmentTools },
   ];
 

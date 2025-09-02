@@ -49,7 +49,9 @@ export interface Skills {
   os: string[];
   cloudAndDevops: string[];
   systemAdminAndIt: string[];
+  programmingLanguages: string[];
   developmentTools: string[];
+
 }
 
 export interface ResumeData {
