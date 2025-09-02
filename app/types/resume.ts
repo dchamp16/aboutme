@@ -45,10 +45,11 @@ export interface Contact {
 export interface Skills {
   frontend: string[];
   backend: string[];
-  cloud: string[];
-  tools: string[];
-  softSkills: string[];
-  other: string[];
+  database: string[];
+  os: string[];
+  cloudAndDevops: string[];
+  systemAdminAndIt: string[];
+  developmentTools: string[];
 }
 
 export interface ResumeData {

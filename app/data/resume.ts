@@ -1,3 +1,67 @@
+// Define types for resume data
+export interface SkillCategory {
+  title: string;
+  skills: string[];
+}
+
+export interface Course {
+  code: string;
+  name: string;
+  highlights: string[];
+}
+
+export interface Education {
+  institution: string;
+  degree: string;
+  dates: string;
+  location: string;
+  courses?: Course[];
+}
+
+export interface Experience {
+  company: string;
+  location: string;
+  position: string;
+  dates: string;
+  responsibilities: string[];
+}
+
+export interface Project {
+  name: string;
+  description: string;
+  technologies: string[];
+  highlights: string[];
+  repository: string;
+  website?: string;
+}
+
+export interface Contact {
+  phone: string;
+  email: string[];
+  github: string;
+  linkedin: string;
+}
+
+export interface Skills {
+  frontend: string[];
+  backend: string[];
+  database: string[];
+  os: string[];
+  cloudAndDevops: string[];
+  systemAdminAndIt: string[];
+  developmentTools: string[];
+}
+
+export interface ResumeData {
+  contact: Contact;
+  name: string;
+  summary: string;
+  skills: Skills;
+  education: Education[];
+  experience: Experience[];
+  projects: Project[];
+}
+
 export const resumeData = {
   contact: {
     phone: '(801) 906-1326',
@@ -6,144 +70,192 @@ export const resumeData = {
     linkedin: 'https://www.linkedin.com/in/peter-justine-ramos-2a40a4284',
   },
   name: 'Peter Justine Ramos',
-  summary: 'Full Stack Developer with hands-on experience in JavaScript, TypeScript, React, NodeJS, and modern web technologies. Skilled in creating user-friendly applications and implementing cloud using AWS and Google Console. Passionate about developing high-quality software through collaboration and building projects.',
+  summary: 'Recent Computer Science graduate focusing on full-stack web development with experience in JavaScript, TypeScript, ReactJS, NodeJS, and cloud technologies. Demonstrated ability to develop scalable applications and optimize websites to improve performance using modern technologies. Through education, continued learning, and freelance web development experience, I built a strong foundation in full-stack development, cloud technology, and database design.',
   skills: {
-    frontend: ['JavaScript', 'TypeScript', 'Vue.js', 'React.js', 'Next.js', 'Tailwind', 'CSS', 'Sass', 'Bootstrap', 'jQuery'],
-    backend: ['Node.js', 'Express.js', 'REST APIs'],
-    databases: ['SQL', 'MongoDB', 'PostgreSQL', 'Snowflake'],
-    cloud: ['AWS', 'Google Console', 'Docker'],
-    tools: ['Git', 'Visual Studio Code', 'IntelliJ IDEA', 'Lucidchart'],
-    prototyping: ['Figma', 'Adobe XD', 'Sketch', 'Balsamiq'],
-    softSkills: ['Agile methodologies', 'Team collaboration', 'Problem-solving'],
-    other: ['C', 'C++', 'Python']
+    frontend: ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Vue.js', 'jQuery', 'HTML5', 'CSS3', 'Tailwind CSS', 'Sass', 'Bootstrap', 'Responsive Design'],
+    backend: ['Node.js', 'Express.js', 'RESTful APIs', 'Server-side Rendering', 'Microservices Architecture'],
+    database: ['SQL', 'MongoDB', 'PostgreSQL', 'MySQL', 'Snowflake', 'Database Optimization', 'NoSQL'],
+    os: ['Windows', 'MacOS', 'Linux'],
+    cloudAndDevops: ['AWS (Lambda, DynamoDB, S3)', 'Google Cloud Platform', 'Docker', 'CI/CD Pipelines'],
+    systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations'],
+    developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucidchart', 'Figma', 'Adobe XD', 'Sketch', 'Balsamiq']
   },
   education: [
     {
+      institution: 'Western Governors University',
+      degree: 'Master of Computer Science',
+      dates: 'August 2025 - Present',
+      location: 'Salt Lake, Utah',
+      courses: [
+        {
+          code: 'AI/ML Focus',
+          name: 'Artificial Intelligence and Machine Learning',
+          highlights: [
+            'Major: Artificial Intelligence and Machine Learning',
+            'Focus Areas: Formal Language Theory, Programming Language Design, Algorithm Analysis'
+          ]
+        },
+        {
+          code: 'ML/DL',
+          name: 'Machine Learning for Computer Scientists & Deep Learning',
+          highlights: [
+            'Deep learning architectures, neural networks, and machine learning algorithms'
+          ]
+        },
+        {
+          code: 'NLP',
+          name: 'Natural Language Processing',
+          highlights: [
+            'Applications of language models and text analysis'
+          ]
+        },
+        {
+          code: 'AI Found',
+          name: 'Artificial Intelligence Foundations',
+          highlights: [
+            'AI algorithms, reasoning systems, and intelligent agent design'
+          ]
+        },
+        {
+          code: 'Algorithms',
+          name: 'Applied Algorithms and Reasoning',
+          highlights: [
+            'Algorithm analysis, computational complexity, and automated reasoning'
+          ]
+        },
+        {
+          code: 'Unix/Linux',
+          name: 'Unix/Linux Systems',
+          highlights: [
+            'System administration, shell scripting, and server management'
+          ]
+        }
+      ]
+    },
+    {
       institution: 'Utah Valley University',
-      degree: 'Bachelor of Computer Science, Full Stack Web Development',
-      dates: 'May 2022 – December 2024',
+      degree: 'Bachelor of Computer Science',
+      dates: 'April 2022 - December 2024',
       location: 'Provo, Utah',
       courses: [
         {
           code: 'CS4900',
-          name: 'Capstone Project — Environmental Monitoring System',
+          name: 'Capstone Project - Environmental Monitoring System',
           highlights: [
-            'Deployed Arduino units across campus for real-time environmental data collection',
-            'Developed a responsive UI with Next.js and Tailwind CSS and implemented a CI/CD workflow'
+            'Development of a campus-wide environmental monitoring system using Arduino sensors for real-time data collection',
+            'Built a responsive Next.js dashboard with Tailwind CSS for data visualization and system management',
+            'Implemented CI/CD pipeline for automated deployment and system updates'
           ]
         },
         {
           code: 'CS4880',
           name: 'Cloud Application Development',
           highlights: [
-            'Developed REST APIs and deployed solutions on AWS using Lambda, DynamoDB, and S3'
+            'Developed a REST API and deployed it in AWS',
+            'Created serverless architecture using Lambda functions, DynamoDB, and S3 storage',
+            'Used Amazon Cognito(Authentication), AWS IAM(Managing User), AWS KMS(Hashing), SNS(Email notification for authentication flow)'
           ]
         },
         {
           code: 'CS4690',
           name: 'Distributed Systems',
           highlights: [
-            'Built secure distributed systems with effective authentication and authorization'
+            'Built a secure database for authentication and authorization mechanisms'
           ]
         },
         {
           code: 'CS3530',
-          name: 'Advanced Databases and NoSQL',
+          name: 'Advanced Databases & NoSQL',
           highlights: [
-            'Designed databases with MySQL, PostgreSQL, and NoSQL solutions using MongoDB and Cassandra'
+            'Designed and implemented normalized relational databases and NoSQL solutions for specific use cases',
+            'Worked extensively with MySQL, PostgreSQL, MongoDB, and Cassandra for various data storage needs'
           ]
         },
         {
           code: 'CS3520',
           name: 'Database Management Systems',
           highlights: [
-            'Designed and implemented normalized relational databases using MySQL and Python'
-          ]
-        },
-        {
-          code: 'CS3410',
-          name: 'Human Factors in Software Development',
-          highlights: [
-            'Designed and evaluated user interfaces with tools like Figma, Balsamiq, and Photoshop',
-            'Conducted contextual inquiries and developed wireframes for user-centered design solutions'
+            'Designed and implemented normalized relational databases and NoSQL solutions for specific use cases',
+            'Worked extensively with MySQL, PostgreSQL, MongoDB, and Cassandra for various data storage needs'
           ]
         }
       ]
     },
     {
       institution: 'Salt Lake Community College',
-      degree: 'Associate in Computer Science Information Systems',
-      dates: 'January 2020 – December 2022',
+      degree: 'Associate of Computer Science Information Systems',
+      dates: 'January 2020 - April 2022',
       location: 'Salt Lake, Utah',
       courses: [
         {
-          code: 'CSIS 2810',
-          name: 'Computer Architecture',
+          code: 'Core',
+          name: 'Key Coursework',
           highlights: [
-            'Examined the interaction between hardware and software, including logic gates, processors, and memory hierarchies',
-            'Built a deeper understanding of computer architecture and parallel processing',
-            'Collaborated on team projects analyzing processor performance and optimization techniques'
-          ]
-        },
-        {
-          code: 'CSIS 2420',
-          name: 'Algorithms & Data Structures',
-          highlights: [
-            'Focused on designing and analyzing efficient algorithms and implementing data structures like stacks, queues, linked lists, trees, and graphs',
-            'Evaluated algorithm performance and selected appropriate data structures for problem-solving',
-            'Developed skills in Java generics, recursion, and Big-O complexity analysis'
-          ]
-        },
-        {
-          code: 'CSIS 1400',
-          name: 'Fundamentals of Programming',
-          highlights: [
-            'Learned foundational programming concepts, including primitive data types, control structures, and object-oriented programming with Java',
-            'Designed and implemented simple Java programs using IDEs and UML diagrams',
-            'Developed skills in problem-solving, debugging, and method creation for software design'
+            'Data Structures & Algorithms, Computer Architecture, Object-Oriented Programming, Java Development'
           ]
         }
       ]
     }
-
   ],
   experience: [
     {
-      company: 'Arroyo Seco Baseball',
-      location: 'California',
-      position: 'Web Developer',
-      dates: 'December 2022 - May 2023',
+      company: 'Albany Composite',
+      location: 'Salt Lake, Utah',
+      position: 'Mechanical Technician II',
+      dates: 'March 2024 - Present',
       responsibilities: [
-        'Improved website performance and reduced load times by 20% using WordPress',
-        'Developed interactive features to enhance user experience',
-        'Collaborated with cross-functional teams'
+        'Built high-precision helicopter components with 99.5% accuracy, ensuring compliance with strict quality standards',
+        'Partnered with engineering teams to diagnose and fix complex assembly challenges, cutting production delays by 15%',
+        'Applied quality control protocols and documentation practices, lowering defects by 10%'
       ]
     },
     {
-      company: 'Albany Composite',
-      location: 'Salt Lake, Utah',
-      position: 'Mechanical Assembler I',
-      dates: 'March 2024 - Present',
+      company: 'Arroyo Seco Baseball',
+      location: 'California',
+      position: 'Web Developer & IT intern',
+      dates: 'December 2022 - May 2023',
       responsibilities: [
-        'Assembled helicopter components with a focus on precision and safety',
-        'Collaborated with engineering teams to identify and resolve assembly issues',
-        'Implemented quality control measures, reducing defects by 10%'
+        'Used WordPress and custom JavaScript to speed up and improve the website\'s performance by 20% by optimizing code, compressing images, and caching',
+        'Made more than five interactive features, like dynamic forms, real-time updates, and tools to get people involved to improve the user experience',
+        'Oversaw IT infrastructure by managing user accounts, system administration, and technical support for over 15 employees',
+        'To keep the system up 99% of the time, backup systems were set up, network security was improved, and hardware and software issues were fixed',
+        'Collaborated with multidisciplinary groups to provide complete IT support and mobile-first, responsive solutions'
       ]
-    },
+    }
   ],
   projects: [
     {
-      name: 'Environmental Monitoring System',
-      description: 'Real-time environmental monitoring system for UVU campus using Arduino and MongoDB. The system collected environmental data through Arduino sensors and exposed it via a REST API deployed on Render (Note: Arduino data collection ended with course completion).',
+      name: 'Environmental Monitoring System for UVU',
+      description: 'Using Arduino and MongoDB, a real-time environmental monitoring system for temperature, humidity, and air quality was constructed.',
       technologies: ['Arduino', 'MongoDB', 'Next.js', 'Tailwind CSS', 'Express.js'],
       highlights: [
-        'Built real-time Arduino monitoring for air quality, temperature, and humidity',
-        'Designed responsive UI for data visualization',
-        'Deployed REST API on Render (https://arduino-environmental-monitoring-system.onrender.com/data)',
-        'Configured Render services and Middleware pipelines',
-        'Implemented Arduino sensors for data collection (active during course duration)'
+        'Integrated Tailwind CSS for responsive styling and designed a Next.js user interface for data visualization',
+        'Middleware pipelines and render services were configured for smooth deployment'
       ],
-      repository: 'https://github.com/dchamp16/CS4900_Capstone'
+      repository: 'https://github.com/dchamp16/CS4900_Capstone',
+      website: 'https://arduino-environmental-monitoring-system.onrender.com/data'
+    },
+    {
+      name: 'Python Simulate Ordering System / NoSQL Data Manipulation',
+      description: 'A terminal-based ordering system with extensive CRUD functions for NoSQL data manipulation was developed.',
+      technologies: ['Python', 'MongoDB'],
+      highlights: [
+        'I implemented data handling to optimize the database using Python and MongoDB',
+        'Validation and hashing were implemented for security'
+      ],
+      repository: 'https://github.com/dchamp16/python-ordering-system'
+    },
+    {
+      name: 'Enterprise Ordering System with Role-Based Access',
+      description: 'Developed a thorough ordering system with audit logging and role-based access control (Admin, Super Admin).',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Vite'],
+      highlights: [
+        'CRUD operations for orders, hardware inventory, user management, and bulk Excel uploads are supported by the RESTful API that was developed',
+        'A modern React frontend with responsive design, real-time chat, and Hot Module Replacement was created using Vite',
+        'Implemented a secure authentication system and data validation for enterprise-level reliability'
+      ],
+      repository: 'https://github.com/dchamp16/ordering-system',
+      website: 'https://ordering-system-heto.vercel.app/'
     },
     {
       name: 'Multi-tenant School Management System',
@@ -159,83 +271,32 @@ export const resumeData = {
       repository: 'https://github.com/dchamp16/CS4690-web-iii/tree/main/megaPracticum'
     },
     {
-      name: 'Python Ordering System',
-      description: 'Terminal-based ordering system with NoSQL data manipulation',
-      technologies: ['Python', 'MongoDB', 'Mongoose'],
-      highlights: [
-        'Implemented CRUD operations for data management',
-        'Built efficient data handling system'
-      ],
-      repository: 'https://github.com/dchamp16/python-ordering-system'
-    },
-    {
       name: 'BabelFish Translator',
       description: 'A multilingual communication app using HTTP APIs and Google Translation API for real-time text and speech translation.',
-      technologies: [
-        'React.js',
-        'TypeScript',
-        'Node.js',
-        'Express.js',
-        'Google Translation API',
-        'Tailwind CSS',
-        'Vite',
-        'Docker',
-        'Vercel'
-      ],
+      technologies: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'Google Translation API', 'Tailwind CSS', 'Vite', 'Docker', 'Vercel'],
       highlights: [
-        'Built a RESTful API for real-time translation and multilingual chat.',
-        'Integrated Google Translation API with robust error handling.',
-        'Developed a responsive UI with React, TypeScript, and Tailwind CSS.',
-        'Added speech recognition and synthesis for hands-free interaction.',
-        'Deployed on Vercel with optimized builds via Docker.',
-        'Messages are stored in memory during runtime, resetting on restart.'
+        'Built a RESTful API for real-time translation and multilingual chat',
+        'Integrated Google Translation API with robust error handling',
+        'Developed a responsive UI with React, TypeScript, and Tailwind CSS',
+        'Added speech recognition and synthesis for hands-free interaction',
+        'Deployed on Vercel with optimized builds via Docker',
+        'Messages are stored in memory during runtime, resetting on restart'
       ],
       repository: 'https://github.com/dchamp16/translator',
       website: 'https://translator-phi-black.vercel.app/'
     },
     {
-      name: 'Ordering System',
-      description: 'A comprehensive ordering and user management system designed to streamline employee order tracking and admin user management, featuring role-based access control and RESTful APIs.',
-      technologies: [
-        'Node.js',
-        'Express.js',
-        'MongoDB',
-        'Mongoose',
-        'JavaScript',
-        'Reactjs',
-        'bcrypt.js',
-        'Express-Session',
-        'Joi',
-        'JWT',
-        'dotenv',
-        'Postman'
-      ],
-      highlights: [
-        'Implemented order management for employees, allowing them to track orders via empId without requiring login.',
-        'Developed admin user management system with Super Admin and Admin roles, including role-based permissions.',
-        'Built RESTful APIs for orders and user management with robust error handling and validation.',
-        'Designed session-based authentication and middleware for secure access control.',
-        'Created an intuitive workflow for adding, updating, and deleting orders and users.',
-        'Integrated MongoDB for data persistence, with Mongoose for schema modeling.',
-        'Implemented top-tier admin and lower-tier admin that have 2 different permissions.',
-        'Current status: Work in progress; when ordered deducted - current stock, then return deducted + current stock but when initially 0 or NULL no deduction or addition.'
-      ],
-      repository: 'https://github.com/dchamp16/ordering-system',
-      website: 'https://ordering-system-heto.vercel.app/'
-    },
-    {
       name: 'Expense Tracker',
       description: 'A web-based expense tracker application that allows users to manage their expenses and income, providing a user-friendly interface for tracking financial transactions.',
-      technologies: ['TypeScript', 'React.js', 'Tailwind', 'C#', 'ASP.NET Core'],
+      technologies: ['TypeScript', 'React.js', 'Tailwind CSS', 'C#', 'ASP.NET Core'],
       highlights: [
-        '(✓)Implemented user authentication and authorization with ASP.NET Core.',
-        '(𐄂)Integrated RESTful APIs for data management and real-time updates.',
-        '(𐄂)Utilized C# for backend development, ensuring efficient data processing and storage.',
-        '(𐄂)Developed a responsive web application for tracking expenses and income using React.js and TypeScript.',
-        '(𐄂)Designed a user-friendly interface with Tailwind CSS for seamless navigation.',
-
+        '(✓)Implemented user authentication and authorization with ASP.NET Core',
+        '(𐄂)Integrated RESTful APIs for data management and real-time updates',
+        '(𐄂)Utilized C# for backend development, ensuring efficient data processing and storage',
+        '(𐄂)Developed a responsive web application for tracking expenses and income using React.js and TypeScript',
+        '(𐄂)Designed a user-friendly interface with Tailwind CSS for seamless navigation'
       ],
       repository: 'https://github.com/dchamp16/expenseTracker'
-    },
+    }
   ]
 };
