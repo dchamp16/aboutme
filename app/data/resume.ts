@@ -136,6 +136,21 @@ export const resumeData = {
   ],
   experience: [
     {
+      company: 'St Martin De Porres Catholic Church',
+      location: 'Taylorsville, Utah',
+      position: 'IT Administrator',
+      dates: 'October 2025 - Present',
+      responsibilities: [
+        'Architected and deployed a bilingual VoIP system using Yealink hardware and cloud PBX, designing custom IVR call flows and voicemail routing.',
+        'Digital Transformation of the parish IT infrastructure by proposing secure nonprofit licensing and deploying the Microsoft 365 Business Standard suite.',
+        'Administer and manage all user accounts, groups, and licensing using Microsoft 365 and Microsoft Entra ID Admin Center.',
+        'Implement and enforce security protocols for all staff, multi-factor authentication, and self-service password reset',
+        'Deployed and customized a SharePoint Online to manage the documents, communication, and church calendar.',
+        'Acted primary IT help desk, troubleshooting all technical issues, including SIP signaling and SharePoint bugs, and providing network traces to support teams.',
+        'Create ongoing documentation for non-technical staff on new systems, security practices, and Office 365 applications.'
+      ]
+    },
+    {
       company: 'Albany Composite',
       location: 'Salt Lake, Utah',
       position: 'Mechanical Technician II',
