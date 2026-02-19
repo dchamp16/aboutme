@@ -13,7 +13,7 @@ export const resumeData = {
     database: ['SQL', 'MongoDB', 'PostgreSQL', 'MySQL', 'Snowflake', 'Database Optimization', 'NoSQL'],
     os: ['Windows', 'MacOS', 'Linux'],
     cloudAndDevops: ['AWS (Lambda, DynamoDB, S3)', 'Google Cloud Platform', 'Docker', 'CI/CD Pipelines'],
-    systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations'],
+    systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations', 'VoIP Administration (SIP, IVR, PBX)', 'Yealink Hardware Configuration'],
     programmingLanguages: ['Python', 'Java', 'C#', 'C++', 'Bash/Shell Scripting'],
     developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucidchart', 'Figma', 'Adobe XD', 'Sketch', 'Balsamiq']
   },
