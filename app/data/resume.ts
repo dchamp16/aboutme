@@ -6,21 +6,21 @@ export const resumeData = {
     linkedin: 'https://www.linkedin.com/in/peter-justine-ramos-2a40a4284',
   },
   name: 'Peter Justine Ramos',
-  summary: 'Recent Computer Science graduate focusing on full-stack web development with experience in JavaScript, TypeScript, ReactJS, NodeJS, and cloud technologies. Demonstrated ability to develop scalable applications and optimize websites to improve performance using modern technologies. Through education, continued learning, and freelance web development experience, I built a strong foundation in full-stack development, cloud technology, and database design.',
+  summary: 'Full-stack software engineer with a strong foundation in cloud infrastructure, responsive web development, and database optimization. Currently pursuing an MS in Artificial Intelligence and Machine Learning. Proven track record of building secure, scalable applications and streamlining IT operations.',
   skills: {
-    frontend: ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Vue.js', 'jQuery', 'HTML5', 'CSS3', 'Tailwind CSS', 'Sass', 'Bootstrap', 'Responsive Design'],
-    backend: ['Node.js', 'Express.js', 'RESTful APIs', 'Server-side Rendering', 'Microservices Architecture'],
+    frontend: ['React.js', 'Next.js', 'Vue.js', 'jQuery', 'HTML5', 'CSS3', 'Tailwind CSS', 'Sass', 'Bootstrap', 'Responsive Design'],
+    backend: ['.NET', 'Node.js', 'Express.js', 'RESTful APIs', 'Server-side Rendering', 'Microservices Architecture'],
     database: ['SQL', 'MongoDB', 'PostgreSQL', 'MySQL', 'Snowflake', 'Database Optimization', 'NoSQL'],
     os: ['Windows', 'MacOS', 'Linux'],
-    cloudAndDevops: ['AWS (Lambda, DynamoDB, S3)', 'Google Cloud Platform', 'Docker', 'CI/CD Pipelines'],
-    systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations', 'VoIP Administration (SIP, IVR, PBX)', 'Yealink Hardware Configuration'],
-    programmingLanguages: ['Python', 'Java', 'C#', 'C++', 'Bash/Shell Scripting'],
-    developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucidchart', 'Figma', 'Adobe XD', 'Sketch', 'Balsamiq']
+    cloudAndDevops: ['Azure Active Directory (Entra ID)', 'Microsoft 365', 'AWS (Lambda, DynamoDB, S3)', 'Google Cloud Platform', 'Docker', 'CI/CD Pipelines'],
+    systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations', 'Microsoft 365 Admin Center', 'SharePoint Administration'],
+    programmingLanguages: ['Python', 'JavaScript', 'TypeScript', 'C#', 'C', 'C++', 'Java'],
+    developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucid chart', 'Figma', 'Adobe XD', 'Sketch', 'Balsamiq']
   },
   education: [
     {
       institution: 'Western Governors University',
-      degree: 'Master of Computer Science',
+      degree: 'Master of Computer Science (Artificial Intelligence and ML)',
       dates: 'August 2025 - Present',
       location: 'Salt Lake, Utah',
       courses: [
@@ -28,50 +28,15 @@ export const resumeData = {
           code: 'AI/ML Focus',
           name: 'Artificial Intelligence and Machine Learning',
           highlights: [
-            'Major: Artificial Intelligence and Machine Learning',
-            'Focus Areas: Formal Language Theory, Programming Language Design, Algorithm Analysis'
-          ]
-        },
-        {
-          code: 'ML/DL',
-          name: 'Machine Learning for Computer Scientists & Deep Learning',
-          highlights: [
-            'Deep learning architectures, neural networks, and machine learning algorithms'
-          ]
-        },
-        {
-          code: 'NLP',
-          name: 'Natural Language Processing',
-          highlights: [
+            'Deep learning architectures, neural networks, and machine learning algorithms',
             'Applications of language models and text analysis'
-          ]
-        },
-        {
-          code: 'AI Found',
-          name: 'Artificial Intelligence Foundations',
-          highlights: [
-            'AI algorithms, reasoning systems, and intelligent agent design'
-          ]
-        },
-        {
-          code: 'Algorithms',
-          name: 'Applied Algorithms and Reasoning',
-          highlights: [
-            'Algorithm analysis, computational complexity, and automated reasoning'
-          ]
-        },
-        {
-          code: 'Unix/Linux',
-          name: 'Unix/Linux Systems',
-          highlights: [
-            'System administration, shell scripting, and server management'
           ]
         }
       ]
     },
     {
       institution: 'Utah Valley University',
-      degree: 'Bachelor of Computer Science',
+      degree: 'Bachelor of Computer Science (Full Stack Web Development)',
       dates: 'April 2022 - December 2024',
       location: 'Provo, Utah',
       courses: [
@@ -79,48 +44,15 @@ export const resumeData = {
           code: 'CS4900',
           name: 'Capstone Project - Environmental Monitoring System',
           highlights: [
-            'Development of a campus-wide environmental monitoring system using Arduino sensors for real-time data collection',
-            'Built a responsive Next.js dashboard with Tailwind CSS for data visualization and system management',
-            'Implemented CI/CD pipeline for automated deployment and system updates'
-          ]
-        },
-        {
-          code: 'CS4880',
-          name: 'Cloud Application Development',
-          highlights: [
-            'Developed a REST API and deployed it in AWS',
-            'Created serverless architecture using Lambda functions, DynamoDB, and S3 storage',
-            'Used Amazon Cognito(Authentication), AWS IAM(Managing User), AWS KMS(Hashing), SNS(Email notification for authentication flow)'
-          ]
-        },
-        {
-          code: 'CS4690',
-          name: 'Distributed Systems',
-          highlights: [
-            'Built a secure database for authentication and authorization mechanisms'
-          ]
-        },
-        {
-          code: 'CS3530',
-          name: 'Advanced Databases & NoSQL',
-          highlights: [
-            'Designed and implemented normalized relational databases and NoSQL solutions for specific use cases',
-            'Worked extensively with MySQL, PostgreSQL, MongoDB, and Cassandra for various data storage needs'
-          ]
-        },
-        {
-          code: 'CS3520',
-          name: 'Database Management Systems',
-          highlights: [
-            'Designed and implemented normalized relational databases and NoSQL solutions for specific use cases',
-            'Worked extensively with MySQL, PostgreSQL, MongoDB, and Cassandra for various data storage needs'
+            'Engineered a full-stack IoT dashboard to display real-time sensor analytics and automated insights',
+            'Integrated hardware (Arduino) with a robust cloud backend using Node.js, React, MongoDB, AWS, and the Gemini API, supported by automated CI/CD pipelines'
           ]
         }
       ]
     },
     {
       institution: 'Salt Lake Community College',
-      degree: 'Associate of Computer Science Information Systems',
+      degree: 'Associate of Computer Science (Information Systems)',
       dates: 'January 2020 - April 2022',
       location: 'Salt Lake, Utah',
       courses: [
@@ -136,29 +68,29 @@ export const resumeData = {
   ],
   experience: [
     {
-      company: 'St Martin De Porres Catholic Church',
+      company: 'St Martin De Porres Church',
       location: 'Taylorsville, Utah',
-      position: 'IT Administrator',
+      position: 'IT Administrator (Volunteer)',
       dates: 'October 2025 - Present',
       responsibilities: [
-        'Architected and deployed a bilingual VoIP system using Yealink hardware and cloud PBX, designing custom IVR call flows and voicemail routing.',
-        'Digital Transformation of the parish IT infrastructure by proposing secure nonprofit licensing and deploying the Microsoft 365 Business Standard suite.',
-        'Administer and manage all user accounts, groups, and licensing using Microsoft 365 and Microsoft Entra ID Admin Center.',
-        'Implement and enforce security protocols for all staff, multi-factor authentication, and self-service password reset',
-        'Deployed and customized a SharePoint Online to manage the documents, communication, and church calendar.',
-        'Acted primary IT help desk, troubleshooting all technical issues, including SIP signaling and SharePoint bugs, and providing network traces to support teams.',
-        'Create ongoing documentation for non-technical staff on new systems, security practices, and Office 365 applications.'
+        'Upgraded the parish IT infrastructure by setting up Microsoft 365 Business Standard for secure, non-profit use.',
+        'Managed user accounts, permission groups, and software licenses using the Microsoft Entra ID Admin Center.',
+        'Improved system security by enforcing Multi-Factor Authentication (MFA) and self-service password resets for all staff.',
+        'Built and customized a SharePoint Online site to organize church documents, team communication, and calendars.',
+        'Served as the primary IT Help Desk, fixing daily technical issues and running network traces alongside Microsoft Support.',
+        'Wrote easy-to-read guides to help non-technical staff understand new systems, security rules, and Office 365 tools.'
       ]
     },
     {
       company: 'Albany Composite',
       location: 'Salt Lake, Utah',
-      position: 'Mechanical Technician II',
+      position: 'Composite Technician II Trainer',
       dates: 'March 2024 - Present',
       responsibilities: [
-        'Built high-precision helicopter components with 99.5% accuracy, ensuring compliance with strict quality standards',
-        'Partnered with engineering teams to diagnose and fix complex assembly challenges, cutting production delays by 15%',
-        'Applied quality control protocols and documentation practices, lowering defects by 10%'
+        'Built high-precision aerospace composite parts following strict blueprints, maintaining a 99.5% accuracy rate.',
+        'Performed quality control checks using measuring tools during assembly to ensure parts met customer specifications.',
+        'Partnered with engineering teams to fix production workflow issues, reducing delays by 15% and lowering defects by 10%.',
+        'Followed strict documentation and inspection safety protocols to keep production consistent and accurate.'
       ]
     },
     {
@@ -167,88 +99,56 @@ export const resumeData = {
       position: 'Web Developer & IT intern',
       dates: 'December 2022 - May 2023',
       responsibilities: [
-        'Used WordPress and custom JavaScript to speed up and improve the website\'s performance by 20% by optimizing code, compressing images, and caching',
-        'Made more than five interactive features, like dynamic forms, real-time updates, and tools to get people involved to improve the user experience',
-        'Oversaw IT infrastructure by managing user accounts, system administration, and technical support for over 15 employees',
-        'To keep the system up 99% of the time, backup systems were set up, network security was improved, and hardware and software issues were fixed',
-        'Collaborated with multidisciplinary groups to provide complete IT support and mobile-first, responsive solutions'
+        'Increased website speed and performance by 20% by writing custom JavaScript, optimizing code, and compressing images in WordPress.',
+        'Developed 5+ interactive features, including dynamic forms and live updates, to improve the overall user experience.',
+        'Managed the IT infrastructure, providing system administration and technical support for a team of 15+ employees.',
+        'Maintained 99% system uptime by setting up data backups, improving network security, and troubleshooting hardware issues.',
+        'Collaborated with different departments to provide fast IT help and build mobile-friendly, responsive web solutions.'
       ]
     }
   ],
   projects: [
     {
       name: 'Environmental Monitoring System for UVU',
-      description: 'Using Arduino and MongoDB, a real-time environmental monitoring system for temperature, humidity, and air quality was constructed.',
-      technologies: ['Arduino', 'MongoDB', 'Next.js', 'Tailwind CSS', 'Express.js'],
+      description: 'Engineered a full-stack IoT dashboard to display real-time sensor analytics and automated insights.',
+      technologies: ['Node.js', 'React', 'MongoDB', 'AWS', 'Gemini API', 'Arduino'],
       highlights: [
-        'Integrated Tailwind CSS for responsive styling and designed a Next.js user interface for data visualization',
-        'Middleware pipelines and render services were configured for smooth deployment'
+        'Integrated hardware (Arduino) with a robust cloud backend using Node.js, React, MongoDB, AWS, and the Gemini API, supported by automated CI/CD pipelines.'
       ],
       repository: 'https://github.com/dchamp16/CS4900_Capstone',
       website: 'https://arduino-environmental-monitoring-system.onrender.com/data'
     },
     {
-      name: 'Python Simulate Ordering System / NoSQL Data Manipulation',
-      description: 'A terminal-based ordering system with extensive CRUD functions for NoSQL data manipulation was developed.',
-      technologies: ['Python', 'MongoDB'],
+      name: 'The Little Flower Academy (Enrollment & Payment Platform)',
+      description: 'Launched a fully functional business web platform featuring a multi-step student enrollment and calendar scheduling system.',
+      technologies: ['Stripe', 'PayPal', 'DNS/SSL', 'SEO'],
       highlights: [
-        'I implemented data handling to optimize the database using Python and MongoDB',
-        'Validation and hashing were implemented for security'
+        'Integrated secure payment gateways using Stripe and PayPal, alongside custom live chat settings to ensure professional communication with parents.',
+        'Managed end-to-end technical deployment, including GoDaddy DNS/SSL setup, local SEO configuration, and staff onboarding documentation.'
       ],
-      repository: 'https://github.com/dchamp16/python-ordering-system'
+      repository: '',
+      website: 'https://thelittlefloweracademy.com/'
     },
     {
-      name: 'Enterprise Ordering System with Role-Based Access',
-      description: 'Developed a thorough ordering system with audit logging and role-based access control (Admin, Super Admin).',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Vite'],
+      name: 'Translator Multilingual Web Application',
+      description: 'Designed a responsive, multilingual chat application to facilitate instant, cross-language communication.',
+      technologies: ['React', 'TypeScript', 'WebSockets', 'APIs'],
       highlights: [
-        'CRUD operations for orders, hardware inventory, user management, and bulk Excel uploads are supported by the RESTful API that was developed',
-        'A modern React frontend with responsive design, real-time chat, and Hot Module Replacement was created using Vite',
-        'Implemented a secure authentication system and data validation for enterprise-level reliability'
-      ],
-      repository: 'https://github.com/dchamp16/ordering-system',
-      website: 'https://ordering-system-heto.vercel.app/'
-    },
-    {
-      name: 'Multi-tenant School Management System',
-      description: 'Comprehensive management system for UVU and UofU with role-based access control',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JWT', 'Tailwind CSS'],
-      highlights: [
-        'Implemented multi-tenant architecture supporting UVU and UofU institutions',
-        'Built role-based access control for admins, teachers, TAs, and students',
-        'Developed course management with assignment submission and grading',
-        'Created dashboard analytics for student performance tracking',
-        'Integrated real-time notifications for course updates and announcements'
-      ],
-      repository: 'https://github.com/dchamp16/CS4690-web-iii/tree/main/megaPracticum'
-    },
-    {
-      name: 'BabelFish Translator',
-      description: 'A multilingual communication app using HTTP APIs and Google Translation API for real-time text and speech translation.',
-      technologies: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'Google Translation API', 'Tailwind CSS', 'Vite', 'Docker', 'Vercel'],
-      highlights: [
-        'Built a RESTful API for real-time translation and multilingual chat',
-        'Integrated Google Translation API with robust error handling',
-        'Developed a responsive UI with React, TypeScript, and Tailwind CSS',
-        'Added speech recognition and synthesis for hands-free interaction',
-        'Deployed on Vercel with optimized builds via Docker',
-        'Messages are stored in memory during runtime, resetting on restart'
+        'Utilized React and TypeScript for the frontend, combined with WebSockets for real-time messaging and native text-to-speech APIs.'
       ],
       repository: 'https://github.com/dchamp16/translator',
       website: 'https://translator-phi-black.vercel.app/'
     },
     {
-      name: 'Expense Tracker',
-      description: 'A web-based expense tracker application that allows users to manage their expenses and income, providing a user-friendly interface for tracking financial transactions.',
-      technologies: ['TypeScript', 'React.js', 'Tailwind CSS', 'C#', 'ASP.NET Core'],
+      name: 'Enterprise Ordering System with Role-Based Access',
+      description: 'Developed a secure inventory and user management platform featuring strict audit logging and role-based access control.',
+      technologies: ['Node.js', 'Express', 'MongoDB', 'JWT authentication', 'React UI'],
       highlights: [
-        '(✓)Implemented user authentication and authorization with ASP.NET Core',
-        '(𐄂)Integrated RESTful APIs for data management and real-time updates',
-        '(𐄂)Utilized C# for backend development, ensuring efficient data processing and storage',
-        '(𐄂)Developed a responsive web application for tracking expenses and income using React.js and TypeScript',
-        '(𐄂)Designed a user-friendly interface with Tailwind CSS for seamless navigation'
+        'Developed a secure inventory and user management platform featuring strict audit logging and role-based access control.',
+        'Implemented the backend logic and user interface utilizing Node.js, Express, MongoDB, JWT authentication, and a responsive React UI.'
       ],
-      repository: 'https://github.com/dchamp16/expenseTracker'
+      repository: 'https://github.com/dchamp16/ordering-system',
+      website: 'https://ordering-system-heto.vercel.app/'
     }
   ]
 };
