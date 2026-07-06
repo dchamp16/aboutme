@@ -8,19 +8,16 @@ interface ProfileImageProps {
 
 export function ProfileImage({ name }: ProfileImageProps) {
   return (
-    <div className="relative w-48 h-48">
-      <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
-      <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-xl ring-2 ring-primary/20 bg-card">
-        <Image
-          src="/profile.jpeg"
-          alt={name}
-          width={192}
-          height={192}
-          className="object-cover hover:scale-110 transition-transform duration-500"
-          priority
-          unoptimized
-        />
-      </div>
+    <div className="h-36 w-36 shrink-0 overflow-hidden rounded-full ring-1 ring-border">
+      <Image
+        src="/profile.jpeg"
+        alt={name}
+        width={144}
+        height={144}
+        className="object-cover"
+        priority
+        unoptimized
+      />
     </div>
   );
 }

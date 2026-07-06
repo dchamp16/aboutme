@@ -80,23 +80,28 @@ export default function Navigation() {
 
   const NavLinks = ({ isMobile = false }: { isMobile?: boolean }) => (
     <>
-      {navItems.map((item) => (
+      {navItems.map((item, index) => (
         <button
           key={item.id}
           onClick={() => scrollToSection(item.id)}
           className={cn(
-            "relative w-full px-4 py-2.5 text-sm font-medium transition-all duration-300",
-            "hover:bg-primary/10 rounded-xl",
-            "focus:outline-none focus:ring-2 focus:ring-primary/20 focus:ring-offset-2 focus:ring-offset-background",
-            activeSection === item.id && [
-              "bg-primary/10",
-              "before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2",
-              "before:h-8 before:w-1 before:rounded-r-full before:bg-primary",
-              "before:shadow-[0_0_12px_rgba(var(--primary)/0.2)]",
-            ],
+            "flex w-full items-baseline gap-3 rounded-md px-3 py-2 font-sans text-sm transition-colors",
+            "hover:text-foreground",
+            "focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2 focus:ring-offset-background",
+            activeSection === item.id
+              ? "font-semibold text-foreground"
+              : "text-muted-foreground",
             isMobile && "text-left"
           )}
         >
+          <span
+            className={cn(
+              "font-mono text-xs tabular-nums",
+              activeSection === item.id ? "text-primary" : "text-border"
+            )}
+          >
+            {String(index + 1).padStart(2, "0")}
+          </span>
           {item.label}
         </button>
       ))}
@@ -107,18 +112,18 @@ export default function Navigation() {
     <>
       <nav
         className={cn(
-          "fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden lg:block transition-all duration-300",
-          isScrolled ? "opacity-50 hover:opacity-100" : "opacity-100"
+          "fixed right-8 top-1/2 z-50 hidden -translate-y-1/2 lg:block transition-opacity duration-300",
+          isScrolled ? "opacity-60 hover:opacity-100" : "opacity-100"
         )}
       >
-        <div className="backdrop-blur-lg bg-background/80 p-3 rounded-2xl shadow-lg border border-border/50">
-          <div className="flex flex-col gap-1 min-w-[140px]">
+        <div className="rounded-md border border-border bg-background p-2">
+          <div className="flex min-w-[160px] flex-col gap-1">
             <NavLinks />
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="w-full h-10 rounded-xl hover:bg-primary/10"
+              className="mt-1 h-9 w-full rounded-md hover:bg-muted"
             >
               <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
@@ -132,21 +137,15 @@ export default function Navigation() {
         <SheetTrigger
           className={cn(
             "fixed right-4 top-4 z-50 lg:hidden",
-            "p-2.5 rounded-xl transition-all duration-300",
-            "hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/20",
-            isScrolled
-              ? "bg-background/80 backdrop-blur-lg shadow-md"
-              : "bg-background shadow-lg"
+            "rounded-md border border-border bg-background p-2.5 transition-colors",
+            "hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary/30"
           )}
         >
           <Menu className="h-5 w-5" />
         </SheetTrigger>
-        <SheetContent
-          side="right"
-          className="w-[280px] p-6 backdrop-blur-xl bg-background/80"
-        >
+        <SheetContent side="right" className="w-[280px] bg-background p-6">
           <SheetHeader>
-            <SheetTitle className="text-left text-lg font-semibold">
+            <SheetTitle className="text-left font-sans text-lg font-semibold">
               Navigation
             </SheetTitle>
           </SheetHeader>
@@ -157,7 +156,7 @@ export default function Navigation() {
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
-                className="w-full h-10 rounded-xl hover:bg-primary/10 justify-start px-4"
+                className="h-10 w-full justify-start rounded-md px-4 hover:bg-muted"
               >
                 <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

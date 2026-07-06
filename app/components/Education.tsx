@@ -1,45 +1,51 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { resumeData } from "../data/resume";
 
 export default function Education() {
   return (
-    <Card className="mb-8">
-      <CardHeader>
-        <CardTitle>Education</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-8">
-          {resumeData.education.map((edu, index) => (
-            <div key={index} className="border-l-2 border-primary/20 pl-4">
-              <h3 className="text-lg font-semibold">{edu.degree}</h3>
-              <div className="text-sm text-muted-foreground mb-4">
-                <p>{edu.institution} • {edu.location}</p>
-                <p>{edu.dates}</p>
-              </div>
-              {edu.courses && (
-                <div className="space-y-4">
-                  {edu.courses.map((course, idx) => (
-                    <div key={idx} className="space-y-2">
-                      <h4 className="text-sm font-medium">
-                        {course.code}: {course.name}
-                      </h4>
-                      <ul className="list-disc list-inside space-y-1">
-                        {course.highlights.map((highlight, hidx) => (
-                          <li key={hidx} className="text-sm text-muted-foreground">
-                            {highlight}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              )}
+    <section id="education" className="py-10">
+      <h2 className="mb-6 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+        Education
+      </h2>
+      <div className="space-y-8">
+        {resumeData.education.map((edu, index) => (
+          <div key={index}>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <h3 className="font-sans text-base font-semibold text-foreground">
+                {edu.degree}
+              </h3>
+              <span className="font-mono text-xs tabular-nums text-muted-foreground">
+                {edu.dates}
+              </span>
             </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+            <p className="mb-3 font-mono text-xs text-muted-foreground">
+              {edu.institution} · {edu.location}
+            </p>
+            {edu.courses && (
+              <div className="space-y-3">
+                {edu.courses.map((course, idx) => (
+                  <div key={idx}>
+                    <p className="mb-1.5 text-sm font-medium text-foreground">
+                      {course.code}: {course.name}
+                    </p>
+                    <ul className="space-y-1.5">
+                      {course.highlights.map((highlight, hidx) => (
+                        <li
+                          key={hidx}
+                          className="relative pl-4 text-sm leading-relaxed text-muted-foreground before:absolute before:left-0 before:text-primary before:content-['—']"
+                        >
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

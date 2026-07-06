@@ -15,14 +15,13 @@ export function ContactButton({ href, icon: Icon, tooltip }: ContactButtonProps)
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button 
-            variant="outline" 
-            size="icon" 
-            className="relative overflow-hidden group border-primary/20"
+          <Button
+            variant="outline"
+            size="icon"
+            className="transition-colors hover:border-primary hover:text-primary"
             onClick={() => window.open(href)}
           >
-            <div className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform" />
-            <Icon className="h-4 w-4 relative z-10 transition-transform group-hover:scale-110" />
+            <Icon className="h-4 w-4" />
           </Button>
         </TooltipTrigger>
         <TooltipContent>

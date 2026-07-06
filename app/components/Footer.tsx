@@ -18,15 +18,17 @@ const techStack = {
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t bg-muted/50">
+    <footer className="mt-16 border-t border-border">
       <div className="max-w-4xl mx-auto p-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Built with</h3>
+            <h3 className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+              Built with
+            </h3>
             <div className="space-y-4">
               {Object.entries(techStack).map(([category, items]) => (
                 <div key={category} className="space-y-2">
-                  <h4 className="text-sm font-medium text-muted-foreground capitalize">
+                  <h4 className="font-mono text-[0.7rem] uppercase tracking-wider text-muted-foreground">
                     {category}
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -34,10 +36,10 @@ export default function Footer() {
                       <Badge
                         key={item.name}
                         variant="secondary"
-                        className="group relative"
+                        className="group relative font-mono text-xs font-normal"
                       >
                         <span>{item.name}</span>
-                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-popover text-popover-foreground text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
+                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-[3px] border border-border bg-popover px-2 py-1 font-sans text-xs text-popover-foreground opacity-0 transition-opacity group-hover:opacity-100">
                           {item.description}
                         </span>
                       </Badge>
@@ -48,8 +50,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Source Code</h3>
-            <p className="text-sm text-muted-foreground">
+            <h3 className="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+              Source Code
+            </h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">
               This resume is open source. Feel free to check out the code and
               use it as inspiration for your own portfolio.
             </p>
@@ -57,14 +61,14 @@ export default function Footer() {
               href="https://github.com/dchamp16/aboutme"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-sm text-primary hover:text-primary/80 transition-colors"
+              className="inline-flex items-center space-x-2 text-sm text-primary transition-colors hover:text-primary/80"
             >
               <Github className="h-4 w-4" />
               <span>View on GitHub</span>
             </a>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border pt-8 text-center font-mono text-xs uppercase tracking-wider text-muted-foreground">
           <p>
             © {new Date().getFullYear()} Peter Justine Ramos. All rights
             reserved.

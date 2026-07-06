@@ -15,19 +15,19 @@ interface ProjectCardProps {
 
 export function ProjectCard({ repo, project }: ProjectCardProps) {
   return (
-    <Card className="h-full hover:shadow-lg transition-shadow">
+    <Card className="h-full transition-colors hover:border-primary/50">
       <CardHeader className="space-y-1">
         <div className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold">{project.name}</h3>
+          <h3 className="font-sans text-lg font-semibold">{project.name}</h3>
           {repo && (
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+            <div className="flex items-center space-x-2 font-mono text-sm text-muted-foreground">
               <Star className="h-4 w-4" aria-hidden="true" />
-              <span>{repo.stargazers_count}</span>
+              <span className="tabular-nums">{repo.stargazers_count}</span>
             </div>
           )}
         </div>
         {repo && (
-          <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+          <div className="flex items-center space-x-2 font-mono text-xs text-muted-foreground">
             <Calendar className="h-4 w-4" aria-hidden="true" />
             <span>
               Updated {formatDistanceToNow(new Date(repo.updated_at))} ago
@@ -36,14 +36,17 @@ export function ProjectCard({ repo, project }: ProjectCardProps) {
         )}
       </CardHeader>
       <CardContent className="space-y-4">
-        <p className="text-sm text-muted-foreground text-justify">
+        <p className="text-sm leading-relaxed text-muted-foreground">
           {project.description}
         </p>
         <div className="space-y-2">
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             {project.highlights.map((highlight, index) => (
-              <p key={index} className="text-sm text-justify">
-                • {highlight}
+              <p
+                key={index}
+                className="relative pl-4 text-sm leading-relaxed before:absolute before:left-0 before:text-primary before:content-['—']"
+              >
+                {highlight}
               </p>
             ))}
           </div>
@@ -52,6 +55,7 @@ export function ProjectCard({ repo, project }: ProjectCardProps) {
               <Badge
                 key={tech}
                 variant="secondary"
+                className="font-mono text-xs font-normal"
                 aria-label={`Technology: ${tech}`}
               >
                 {tech}
@@ -63,8 +67,8 @@ export function ProjectCard({ repo, project }: ProjectCardProps) {
           {repo && (
             <Badge
               variant="outline"
+              className="flex-shrink-0 font-mono text-xs font-normal"
               aria-label={`Primary language: ${repo.language}`}
-              className="flex-shrink-0"
             >
               {repo.language}
             </Badge>

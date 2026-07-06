@@ -13,22 +13,12 @@ export default function Home() {
       <div className="max-w-4xl mx-auto p-4 lg:pr-40">
         <Header />
         <Navigation />
-        <div className="space-y-12" id="content">
-          <div id="summary">
-            <Summary />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="experience">
-            <Experience />
-          </div>
-          <div id="education">
-            <Education />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
+        <div id="content" className="divide-y divide-border">
+          <Summary />
+          <Skills />
+          <Experience />
+          <Education />
+          <Projects />
         </div>
       </div>
       <Footer />
