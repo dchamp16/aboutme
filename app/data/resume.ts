@@ -115,7 +115,7 @@ export const resumeData = {
       highlights: [
         'Integrated hardware (Arduino) with a robust cloud backend using Node.js, React, MongoDB, AWS, and the Gemini API, supported by automated CI/CD pipelines.'
       ],
-      repository: 'https://github.com/dchamp16/CS4900_Capstone',
+      repository: '',
       website: 'https://arduino-environmental-monitoring-system.onrender.com/data'
     },
     {

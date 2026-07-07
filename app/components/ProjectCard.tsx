@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GitHubRepo } from "../lib/github";
-import { Calendar, Github, Star } from "lucide-react";
+import { Calendar, Github, Globe, Star } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 import { Project } from "../types/resume";
 import { Button } from "@/components/ui/button";
@@ -81,19 +81,21 @@ export function ProjectCard({ repo, project }: ProjectCardProps) {
                 onClick={() => window.open(project.website, "_blank")}
                 className="flex-shrink-0"
               >
-                <Github className="h-4 w-4 mr-2" />
+                <Globe className="h-4 w-4 mr-2" />
                 Visit Website
               </Button>
             )}
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => window.open(project.repository, "_blank")}
-              className="flex-shrink-0"
-            >
-              <Github className="h-4 w-4 mr-2" />
-              View Repository
-            </Button>
+            {project.repository && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => window.open(project.repository, "_blank")}
+                className="flex-shrink-0"
+              >
+                <Github className="h-4 w-4 mr-2" />
+                View Repository
+              </Button>
+            )}
           </div>
         </div>
       </CardContent>
