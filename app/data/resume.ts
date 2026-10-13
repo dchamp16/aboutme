@@ -15,7 +15,7 @@ export const resumeData = {
     cloudAndDevops: ['Azure Active Directory (Entra ID)', 'Microsoft 365', 'AWS (Lambda, DynamoDB, S3)', 'Google Cloud Platform', 'Docker', 'CI/CD Pipelines'],
     systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations', 'Microsoft 365 Admin Center', 'SharePoint Administration'],
     programmingLanguages: ['Python', 'JavaScript', 'TypeScript', 'C#', 'C', 'C++', 'Java'],
-    developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucid chart', 'Figma', 'Adobe XD', 'Sketch', 'Balsamiq']
+    developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucid chart', 'Figma', 'Adobe XD',]
   },
   education: [
     {
