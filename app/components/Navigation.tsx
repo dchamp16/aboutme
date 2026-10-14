@@ -12,8 +12,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { useRole } from "../context/RoleContext";
 
 export default function Navigation() {
+  const { role } = useRole();
   const [activeSection, setActiveSection] = useState("summary");
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -24,7 +26,7 @@ export default function Navigation() {
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
     { id: "projects", label: "Projects" },
-  ];
+  ].filter((item) => role !== "manufacturing" || item.id !== "projects");
 
   useEffect(() => {
     const handleScroll = () => {

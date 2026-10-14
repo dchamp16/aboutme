@@ -1,26 +1,12 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { resumeData } from "../data/resume";
-import { SkillCategory } from "../types/resume";
+import { roleProfiles } from "../data/roleProfiles";
+import { useRole } from "../context/RoleContext";
 
 export default function Skills() {
-  const skillCategories: SkillCategory[] = [
-    { title: "Frontend", skills: resumeData.skills.frontend },
-    { title: "Backend", skills: resumeData.skills.backend },
-    { title: "Database", skills: resumeData.skills.database },
-    { title: "Operating Systems", skills: resumeData.skills.os },
-    { title: "Cloud & DevOps", skills: resumeData.skills.cloudAndDevops },
-    {
-      title: "System Administration & IT",
-      skills: resumeData.skills.systemAdminAndIt,
-    },
-    {
-      title: "Programming Languages",
-      skills: resumeData.skills.programmingLanguages,
-    },
-    { title: "Development Tools", skills: resumeData.skills.developmentTools },
-  ];
+  const { role } = useRole();
+  const skillCategories = roleProfiles[role].skills;
 
   return (
     <section id="skills" className="py-10">

@@ -8,8 +8,10 @@ import { Info } from "lucide-react";
 import { resumeData } from "../data/resume";
 import { getGitHubRepos } from "../lib/github/api";
 import { LoadingProjectCards } from "./LoadingProjectCards";
+import { useRole } from "../context/RoleContext";
 
 export default function Projects() {
+  const { role } = useRole();
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -39,6 +41,8 @@ export default function Projects() {
     fetchRepos();
     return () => { mounted = false; };
   }, []);
+
+  if (role === "manufacturing") return null;
 
   if (!resumeData.projects?.length) {
     return (

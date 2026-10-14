@@ -6,17 +6,6 @@ export const resumeData = {
     linkedin: 'https://www.linkedin.com/in/peter-justine-ramos-2a40a4284',
   },
   name: 'Peter Justine Ramos',
-  summary: 'Full-stack software engineer with a strong foundation in cloud infrastructure, responsive web development, and database optimization. Currently pursuing an MS in Artificial Intelligence and Machine Learning. Proven track record of building secure, scalable applications and streamlining IT operations.',
-  skills: {
-    frontend: ['React.js', 'Next.js', 'Vue.js', 'jQuery', 'HTML5', 'CSS3', 'Tailwind CSS', 'Sass', 'Bootstrap', 'Responsive Design'],
-    backend: ['.NET', 'Node.js', 'Express.js', 'RESTful APIs', 'Server-side Rendering', 'Microservices Architecture'],
-    database: ['SQL', 'MongoDB', 'PostgreSQL', 'MySQL', 'Snowflake', 'Database Optimization', 'NoSQL'],
-    os: ['Windows', 'MacOS', 'Linux'],
-    cloudAndDevops: ['Azure Active Directory (Entra ID)', 'Microsoft 365', 'AWS (Lambda, DynamoDB, S3)', 'Google Cloud Platform', 'Docker', 'CI/CD Pipelines'],
-    systemAdminAndIt: ['Network Management', 'Active Directory', 'User Account Administration', 'Windows Server', 'System Security', 'Hardware Troubleshooting', 'Backup Systems', 'Technical Support', 'Help Desk Operations', 'Microsoft 365 Admin Center', 'SharePoint Administration'],
-    programmingLanguages: ['Python', 'JavaScript', 'TypeScript', 'C#', 'C', 'C++', 'Java'],
-    developmentTools: ['Git', 'Visual Studio Code', 'JetBrains IDEs', 'Lucid chart', 'Figma', 'Adobe XD',]
-  },
   education: [
     {
       institution: 'Western Governors University',
@@ -79,18 +68,6 @@ export const resumeData = {
         'Built and customized a SharePoint Online site to organize church documents, team communication, and calendars.',
         'Served as the primary IT Help Desk, fixing daily technical issues and running network traces alongside Microsoft Support.',
         'Wrote easy-to-read guides to help non-technical staff understand new systems, security rules, and Office 365 tools.'
-      ]
-    },
-    {
-      company: 'Albany Composite',
-      location: 'Salt Lake, Utah',
-      position: 'Composite Technician II Trainer',
-      dates: 'March 2024 - Present',
-      responsibilities: [
-        'Built high-precision aerospace composite parts following strict blueprints, maintaining a 99.5% accuracy rate.',
-        'Performed quality control checks using measuring tools during assembly to ensure parts met customer specifications.',
-        'Partnered with engineering teams to fix production workflow issues, reducing delays by 15% and lowering defects by 10%.',
-        'Followed strict documentation and inspection safety protocols to keep production consistent and accurate.'
       ]
     },
     {
