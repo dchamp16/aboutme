@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Summary from "./components/Summary";
 import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ export default function Home() {
           <RoleSwitcher />
           <div id="content" className="divide-y divide-border">
             <Summary />
+            <Certifications />
             <Skills />
             <Experience />
             <Education />

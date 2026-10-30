@@ -16,7 +16,7 @@ const manufacturingExperience: Experience[] = [
     position: "Composite Technician III Lead / Trainer",
     company: "Albany International",
     location: "Salt Lake, UT",
-    dates: "March 2024 - Present",
+    dates: "September 2025 - Present",
     responsibilities: [
       "Independently inspect and accept designated manufacturing operations using authorized Operator Self-Verification (OSV) stamps.",
       "Inspect and approve completed work using authorized Operator Self-Verification (OSV) stamps.",
@@ -28,10 +28,10 @@ const manufacturingExperience: Experience[] = [
     ],
   },
   {
-    position: "Structure Assembly II",
+    position: "Structure Assembly II Proficient",
     company: "Albany International",
     location: "Salt Lake, UT",
-    dates: "March 2024 - Present",
+    dates: "March 2024 - September 2025",
     responsibilities: [
       "Work on aerospace composite parts while following work instructions and quality requirements.",
       "Work with engineering and quality teams to find production problems and help fix quality issues.",
@@ -84,12 +84,12 @@ export const roleProfiles: Record<Role, RoleProfile> = {
   manufacturing: {
     label: "Manufacturing",
     roleTitle: "Manufacturing & Quality Technician",
-    summary: "Aerospace composite manufacturing technician with over 2 years of experience at Albany Engineered Composites. Experienced in production, quality inspection, and working with manufacturing drawings and measurement tools. Authorized to inspect and approve completed work using Operator Self-Verification (OSV). Work with engineering and quality teams to identify defects and resolve production issues. Also have experience helping other technicians and improving work processes to reduce material waste. Holds a B.S. in Computer Science and currently pursuing an M.S. in Artificial Intelligence and Machine Learning.",
+    summary: "Results-driven Quality & Manufacturing professional with over 2 years of aerospace composite manufacturing and inspection experience, combined with a strong technical background in STEM and data-driven problem solving. Certified in Root Cause Analysis (RCA) by the American Society for Quality (ASQ). Authorized to inspect and approve aerospace assemblies via Operator Self-Verification (OSV). Experienced in partnering with quality and design engineering teams to investigate non-conformances, perform root cause corrective actions (RCCA), lower defect rates, and train production teams to strict regulatory standards. Holds a B.S. in Computer Science and is pursuing an M.S. in AI/Machine Learning.",
     skills: [
-      { title: "Quality & Inspection", skills: ["Operator Self-Verification (OSV)", "OSV Stamp Authorization", "Quality Inspection", "Product Acceptance", "Process Compliance", "Defect Identification", "Quality Verification"] },
-      { title: "Aerospace Manufacturing", skills: ["Composite Manufacturing", "Structure Assembly", "Production Coordination", "Tooling & Materials Coordination", "Calipers", "Micrometers", "Engineering Drawing Interpretation", "Manufacturing Specifications"] },
+      { title: "Quality & Inspection", skills: ["Root Cause Corrective Action (RCCA / CAPA)", "Operator Self-Verification (OSV)", "Non-Conformance Investigations", "Quality Inspection & Acceptance", "Defect Tracking", "Sampling & Inspection"] },
+      { title: "Aerospace Manufacturing", skills: ["Composite Manufacturing", "Structure Assembly", "Calipers", "Micrometers", "Engineering Drawing Interpretation", "Manufacturing Specifications"] },
       { title: "Quality Documentation", skills: ["Work Instructions", "Customer Drawings", "Production Documentation", "Inspection Requirements", "Corrective Action Support"] },
-      { title: "Lean & Leadership", skills: ["Lean Manufacturing", "Continuous Improvement", "Waste Reduction", "Root-Cause Problem Solving", "Technician Training", "Mentoring", "Safety Requirements", "Team Coordination"] },
+      { title: "Lean & Leadership", skills: ["Lean Manufacturing", "Continuous Improvement", "Waste Reduction", "Root-Cause Problem Solving", "Technician Training", "Team Coordination"] },
       { title: "Technical & Analytical", skills: ["Microsoft Excel", "Python", "SQL", "Data Tracking", "Technical Documentation"] },
     ],
     experience: [...manufacturingExperience, ...itExperience, ...webExperience],
